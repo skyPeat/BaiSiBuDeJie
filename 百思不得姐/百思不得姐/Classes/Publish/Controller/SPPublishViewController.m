@@ -18,4 +18,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = randomColor
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 @end

@@ -14,13 +14,20 @@
 #import "SPFriendTrendViewController.h"
 #import "SPHomeViewController.h"
 
+#import "SPTabBar.h"
 @interface SPTabBarController ()
 
 @end
 
 @implementation SPTabBarController
 +(void)load{
-    
+//    0、获取全局的UITabBarItem
+    UITabBarItem *item = [UITabBarItem appearance];
+//    1、设置文字的属性
+    NSMutableDictionary *attri = [NSMutableDictionary dictionary];
+//    文字的颜色
+    attri[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [item setTitleTextAttributes:attri forState:UIControlStateSelected];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,6 +56,7 @@
     [self addChildViewController:naVC];
 }
 -(void)setUpTabBar{
-    
+    SPTabBar *tabBar = [[SPTabBar alloc] init];
+    [self setValue:tabBar forKey:@"tabBar"];
 }
 @end

@@ -17,6 +17,7 @@
 		E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF6D1DE3F543002572F9 /* SPTabBarController.m */; };
 		E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF731DE3F543002572F9 /* SPNewViewController.m */; };
 		E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */; };
+		E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF8A1DE3FA96002572F9 /* SPTabBar.m */; };
 		E46EECFC1DE3151100E70EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFB1DE3151100E70EC7 /* main.m */; };
 		E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFE1DE3151100E70EC7 /* AppDelegate.m */; };
 		E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46EED061DE3151100E70EC7 /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 		E41FDF771DE3F543002572F9 /* BSBDJ.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBDJ.pch; sourceTree = "<group>"; };
 		E41FDF7B1DE3F543002572F9 /* SPPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPublishViewController.h; sourceTree = "<group>"; };
 		E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPublishViewController.m; sourceTree = "<group>"; };
+		E41FDF891DE3FA96002572F9 /* SPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBar.h; sourceTree = "<group>"; };
+		E41FDF8A1DE3FA96002572F9 /* SPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBar.m; sourceTree = "<group>"; };
 		E46EECF71DE3151100E70EC7 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46EECFB1DE3151100E70EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E46EECFD1DE3151100E70EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 		E41FDF6F1DE3F543002572F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E41FDF891DE3FA96002572F9 /* SPTabBar.h */,
+				E41FDF8A1DE3FA96002572F9 /* SPTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
 				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
+				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
 				E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */,
