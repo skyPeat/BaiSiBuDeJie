@@ -7,22 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFF229C9DD2514AAD70C245F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F350BF1220D7974230D6E8E /* libPods.a */; };
+		E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF531DE3F543002572F9 /* UIColor+Color.m */; };
+		E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF551DE3F543002572F9 /* UIImage+Image.m */; };
+		E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */; };
+		E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */; };
+		E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF651DE3F543002572F9 /* SPHomeViewController.m */; };
+		E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF6B1DE3F543002572F9 /* SPNavigationController.m */; };
+		E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF6D1DE3F543002572F9 /* SPTabBarController.m */; };
+		E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF731DE3F543002572F9 /* SPNewViewController.m */; };
+		E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */; };
 		E46EECFC1DE3151100E70EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFB1DE3151100E70EC7 /* main.m */; };
 		E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFE1DE3151100E70EC7 /* AppDelegate.m */; };
-		E46EED021DE3151100E70EC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EED011DE3151100E70EC7 /* ViewController.m */; };
-		E46EED051DE3151100E70EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46EED031DE3151100E70EC7 /* Main.storyboard */; };
 		E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46EED061DE3151100E70EC7 /* Assets.xcassets */; };
 		E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8F350BF1220D7974230D6E8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41FDF521DE3F543002572F9 /* UIColor+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Color.h"; sourceTree = "<group>"; };
+		E41FDF531DE3F543002572F9 /* UIColor+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Color.m"; sourceTree = "<group>"; };
+		E41FDF541DE3F543002572F9 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		E41FDF551DE3F543002572F9 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		E41FDF581DE3F543002572F9 /* SPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEssenceViewController.h; sourceTree = "<group>"; };
+		E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEssenceViewController.m; sourceTree = "<group>"; };
+		E41FDF5E1DE3F543002572F9 /* SPFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFriendTrendViewController.h; sourceTree = "<group>"; };
+		E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFriendTrendViewController.m; sourceTree = "<group>"; };
+		E41FDF641DE3F543002572F9 /* SPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHomeViewController.h; sourceTree = "<group>"; };
+		E41FDF651DE3F543002572F9 /* SPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHomeViewController.m; sourceTree = "<group>"; };
+		E41FDF6A1DE3F543002572F9 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
+		E41FDF6B1DE3F543002572F9 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
+		E41FDF6C1DE3F543002572F9 /* SPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBarController.h; sourceTree = "<group>"; };
+		E41FDF6D1DE3F543002572F9 /* SPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBarController.m; sourceTree = "<group>"; };
+		E41FDF721DE3F543002572F9 /* SPNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewViewController.h; sourceTree = "<group>"; };
+		E41FDF731DE3F543002572F9 /* SPNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewViewController.m; sourceTree = "<group>"; };
+		E41FDF771DE3F543002572F9 /* BSBDJ.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBDJ.pch; sourceTree = "<group>"; };
+		E41FDF7B1DE3F543002572F9 /* SPPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPublishViewController.h; sourceTree = "<group>"; };
+		E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPublishViewController.m; sourceTree = "<group>"; };
 		E46EECF71DE3151100E70EC7 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46EECFB1DE3151100E70EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E46EECFD1DE3151100E70EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E46EECFE1DE3151100E70EC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E46EED001DE3151100E70EC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E46EED011DE3151100E70EC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E46EED041DE3151100E70EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46EED061DE3151100E70EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46EED091DE3151100E70EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46EED0B1DE3151100E70EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,17 +60,290 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF229C9DD2514AAD70C245F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ADEDB2F813192A02CEFC7BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */,
+				1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E316EC3867D258876412566B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F350BF1220D7974230D6E8E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41FDF501DE3F543002572F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF681DE3F543002572F9 /* Main */,
+				E41FDF561DE3F543002572F9 /* Essence */,
+				E41FDF701DE3F543002572F9 /* New */,
+				E41FDF791DE3F543002572F9 /* Publish */,
+				E41FDF5C1DE3F543002572F9 /* FriendTrend */,
+				E41FDF621DE3F543002572F9 /* Home */,
+				E41FDF761DE3F543002572F9 /* Other */,
+				E41FDF511DE3F543002572F9 /* Category */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E41FDF511DE3F543002572F9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF521DE3F543002572F9 /* UIColor+Color.h */,
+				E41FDF531DE3F543002572F9 /* UIColor+Color.m */,
+				E41FDF541DE3F543002572F9 /* UIImage+Image.h */,
+				E41FDF551DE3F543002572F9 /* UIImage+Image.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E41FDF561DE3F543002572F9 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF571DE3F543002572F9 /* Controller */,
+				E41FDF5A1DE3F543002572F9 /* Model */,
+				E41FDF5B1DE3F543002572F9 /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		E41FDF571DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF581DE3F543002572F9 /* SPEssenceViewController.h */,
+				E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF5A1DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF5B1DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF5C1DE3F543002572F9 /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF5D1DE3F543002572F9 /* Controller */,
+				E41FDF601DE3F543002572F9 /* Model */,
+				E41FDF611DE3F543002572F9 /* View */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		E41FDF5D1DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF5E1DE3F543002572F9 /* SPFriendTrendViewController.h */,
+				E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF601DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF611DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF621DE3F543002572F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF631DE3F543002572F9 /* Controller */,
+				E41FDF661DE3F543002572F9 /* Model */,
+				E41FDF671DE3F543002572F9 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E41FDF631DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF641DE3F543002572F9 /* SPHomeViewController.h */,
+				E41FDF651DE3F543002572F9 /* SPHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF661DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF671DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF681DE3F543002572F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF691DE3F543002572F9 /* Controller */,
+				E41FDF6E1DE3F543002572F9 /* Model */,
+				E41FDF6F1DE3F543002572F9 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E41FDF691DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF6C1DE3F543002572F9 /* SPTabBarController.h */,
+				E41FDF6D1DE3F543002572F9 /* SPTabBarController.m */,
+				E41FDF6A1DE3F543002572F9 /* SPNavigationController.h */,
+				E41FDF6B1DE3F543002572F9 /* SPNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF6E1DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF6F1DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF701DE3F543002572F9 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF711DE3F543002572F9 /* Controller */,
+				E41FDF741DE3F543002572F9 /* Model */,
+				E41FDF751DE3F543002572F9 /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		E41FDF711DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF721DE3F543002572F9 /* SPNewViewController.h */,
+				E41FDF731DE3F543002572F9 /* SPNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF741DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF751DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF761DE3F543002572F9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF771DE3F543002572F9 /* BSBDJ.pch */,
+				E41FDF781DE3F543002572F9 /* Lib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E41FDF781DE3F543002572F9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		E41FDF791DE3F543002572F9 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF7A1DE3F543002572F9 /* Controller */,
+				E41FDF7D1DE3F543002572F9 /* Model */,
+				E41FDF7E1DE3F543002572F9 /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		E41FDF7A1DE3F543002572F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41FDF7B1DE3F543002572F9 /* SPPublishViewController.h */,
+				E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41FDF7D1DE3F543002572F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41FDF7E1DE3F543002572F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41FDF881DE3F54D002572F9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E46EED061DE3151100E70EC7 /* Assets.xcassets */,
+				E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */,
+				E46EED0B1DE3151100E70EC7 /* Info.plist */,
+				E46EECFA1DE3151100E70EC7 /* Supporting Files */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		E46EECEE1DE3151000E70EC7 = {
 			isa = PBXGroup;
 			children = (
 				E46EECF91DE3151100E70EC7 /* 百思不得姐 */,
 				E46EECF81DE3151100E70EC7 /* Products */,
+				3ADEDB2F813192A02CEFC7BA /* Pods */,
+				E316EC3867D258876412566B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +360,8 @@
 			children = (
 				E46EECFD1DE3151100E70EC7 /* AppDelegate.h */,
 				E46EECFE1DE3151100E70EC7 /* AppDelegate.m */,
-				E46EED001DE3151100E70EC7 /* ViewController.h */,
-				E46EED011DE3151100E70EC7 /* ViewController.m */,
-				E46EED031DE3151100E70EC7 /* Main.storyboard */,
-				E46EED061DE3151100E70EC7 /* Assets.xcassets */,
-				E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */,
-				E46EED0B1DE3151100E70EC7 /* Info.plist */,
-				E46EECFA1DE3151100E70EC7 /* Supporting Files */,
+				E41FDF501DE3F543002572F9 /* Classes */,
+				E41FDF881DE3F54D002572F9 /* Resource */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -86,9 +381,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46EED0E1DE3151100E70EC7 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				0294FC72EDD9F517E4F29D8A /* Check Pods Manifest.lock */,
 				E46EECF31DE3151100E70EC7 /* Sources */,
 				E46EECF41DE3151100E70EC7 /* Frameworks */,
 				E46EECF51DE3151100E70EC7 /* Resources */,
+				7C9647D63691023E3856CB3F /* Embed Pods Frameworks */,
+				3C80E524F6C0FC542E56A4E8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +403,7 @@
 		E46EECEF1DE3151000E70EC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SP;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = skyPeat;
 				TargetAttributes = {
@@ -138,34 +437,81 @@
 			files = (
 				E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */,
 				E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */,
-				E46EED051DE3151100E70EC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0294FC72EDD9F517E4F29D8A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C80E524F6C0FC542E56A4E8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C9647D63691023E3856CB3F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E46EECF31DE3151100E70EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46EED021DE3151100E70EC7 /* ViewController.m in Sources */,
 				E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */,
+				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
+				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
+				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
+				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
+				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
+				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
+				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
+				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
+				E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E46EED031DE3151100E70EC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E46EED041DE3151100E70EC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,9 +605,14 @@
 		};
 		E46EED0F1DE3151100E70EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/BSBDJ.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WYptf.www.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +621,14 @@
 		};
 		E46EED101DE3151100E70EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/BSBDJ.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WYptf.www.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +654,7 @@
 				E46EED101DE3151100E70EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,19 @@
+
+
+#ifdef __OBJC__
+/**********随机颜色**********/
+#define randomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+/**********自定义Log**********/
+#ifdef DEBUG
+#define SP_Log(...) NSLog(__VA_ARGS__);
+#else
+#define SP_Log(...)
+#endif
+/**********屏幕的高宽**********/
+#define SP_ScreenW [UIScreen mainScreen].bounds.size.width
+#define SP_ScreenH [UIScreen mainScreen].bounds.size.height
+/**********分类**********/
+#import "UIImage+Image.h"
+#import "UIColor+Color.h"
+#endif
+
