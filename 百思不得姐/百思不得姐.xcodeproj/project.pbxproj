@@ -18,10 +18,13 @@
 		E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF731DE3F543002572F9 /* SPNewViewController.m */; };
 		E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */; };
 		E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF8A1DE3FA96002572F9 /* SPTabBar.m */; };
+		E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF8D1DE42C92002572F9 /* UIView+Frame.m */; };
 		E46EECFC1DE3151100E70EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFB1DE3151100E70EC7 /* main.m */; };
 		E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E46EECFE1DE3151100E70EC7 /* AppDelegate.m */; };
 		E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46EED061DE3151100E70EC7 /* Assets.xcassets */; };
 		E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */; };
+		E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */; };
+		E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CEFD931DE57687004C1443 /* SPSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,8 @@
 		E41FDF7C1DE3F543002572F9 /* SPPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPublishViewController.m; sourceTree = "<group>"; };
 		E41FDF891DE3FA96002572F9 /* SPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBar.h; sourceTree = "<group>"; };
 		E41FDF8A1DE3FA96002572F9 /* SPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBar.m; sourceTree = "<group>"; };
+		E41FDF8C1DE42C92002572F9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E41FDF8D1DE42C92002572F9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		E46EECF71DE3151100E70EC7 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46EECFB1DE3151100E70EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E46EECFD1DE3151100E70EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +61,10 @@
 		E46EED061DE3151100E70EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46EED091DE3151100E70EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46EED0B1DE3151100E70EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CEFD8B1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ButtonItem.h"; sourceTree = "<group>"; };
+		E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ButtonItem.m"; sourceTree = "<group>"; };
+		E4CEFD921DE57687004C1443 /* SPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingViewController.h; sourceTree = "<group>"; };
+		E4CEFD931DE57687004C1443 /* SPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 				E41FDF791DE3F543002572F9 /* Publish */,
 				E41FDF5C1DE3F543002572F9 /* FriendTrend */,
 				E41FDF621DE3F543002572F9 /* Home */,
+				E4CEFD8E1DE57666004C1443 /* Setting */,
 				E41FDF761DE3F543002572F9 /* Other */,
 				E41FDF511DE3F543002572F9 /* Category */,
 			);
@@ -109,6 +119,10 @@
 				E41FDF531DE3F543002572F9 /* UIColor+Color.m */,
 				E41FDF541DE3F543002572F9 /* UIImage+Image.h */,
 				E41FDF551DE3F543002572F9 /* UIImage+Image.m */,
+				E41FDF8C1DE42C92002572F9 /* UIView+Frame.h */,
+				E41FDF8D1DE42C92002572F9 /* UIView+Frame.m */,
+				E4CEFD8B1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.h */,
+				E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -379,6 +393,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4CEFD8E1DE57666004C1443 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E4CEFD8F1DE57666004C1443 /* Controller */,
+				E4CEFD901DE57666004C1443 /* Model */,
+				E4CEFD911DE57666004C1443 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E4CEFD8F1DE57666004C1443 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4CEFD921DE57687004C1443 /* SPSettingViewController.h */,
+				E4CEFD931DE57687004C1443 /* SPSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4CEFD901DE57666004C1443 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4CEFD911DE57666004C1443 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,14 +550,17 @@
 				E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */,
 				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
 				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
+				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
 				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
 				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
+				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
 				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
 				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
+				E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */,
 				E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,5 +15,7 @@
 /**********分类**********/
 #import "UIImage+Image.h"
 #import "UIColor+Color.h"
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+ButtonItem.h"
 #endif
 

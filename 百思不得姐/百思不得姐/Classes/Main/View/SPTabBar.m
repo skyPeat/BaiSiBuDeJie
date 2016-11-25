@@ -35,8 +35,8 @@
     NSInteger count = self.items.count + 1;
     CGFloat buttonX = 0;
     CGFloat buttonY = 0;
-    CGFloat buttonW = self.bounds.size.width / count;
-    CGFloat buttonH = self.bounds.size.height;
+    CGFloat buttonW = self.SP_width / count;
+    CGFloat buttonH = self.SP_height;
     int i = 0;
     for (UIView *tabBarButton in self.subviews) {
         if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
@@ -48,6 +48,7 @@
             i++;
         }
     }
-    self.publishButton.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
+    self.publishButton.center = self.SP_center;
+//    self.publishButton.center = CGPointMake(self.SP_width * 0.5, self.SP_height * 0.5);
 }
 @end

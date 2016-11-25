@@ -33,6 +33,7 @@
     [super viewDidLoad];
 //    0、添加子控制器
     [self addChildViewController];
+   
 //    1、自定义tabBar
     [self setUpTabBar];
 }
@@ -57,6 +58,7 @@
 }
 -(void)setUpTabBar{
     SPTabBar *tabBar = [[SPTabBar alloc] init];
+    
     [self setValue:tabBar forKey:@"tabBar"];
-}
+    }
 @end

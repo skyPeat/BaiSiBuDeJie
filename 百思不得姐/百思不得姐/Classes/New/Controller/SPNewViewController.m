@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = randomColor
+    //    0、设置导航条的内容
+    [self setUpNavigationBar];
 }
-
+#pragma mark-
+#pragma mark- 设置导航条的内容
+-(void)setUpNavigationBar{
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithNormalImage:[UIImage imageNamed:@"MainTagSubIcon"] highlightedImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(subTagClick)];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+}
+-(void)subTagClick{
+    NSLog(@"%s",__func__);
+}
 @end
