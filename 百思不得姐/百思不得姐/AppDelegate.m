@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SPTabBarController.h"
+#import "SPADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +20,8 @@
     //    0、创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //    1、创建窗口跟控制器
-    SPTabBarController *rootVC = [[SPTabBarController alloc] init];
+    SPADViewController *rootVC = [[SPADViewController alloc] init];
+//    SPTabBarController *rootVC = [[SPTabBarController alloc] init];
     //    2、设置窗口跟控制器
     self.window.rootViewController = rootVC;
     //    3、显示窗口

@@ -25,6 +25,16 @@
 		E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */; };
 		E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */; };
 		E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CEFD931DE57687004C1443 /* SPSettingViewController.m */; };
+		E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D963CE1DF41BC10086FAB9 /* SPADViewController.m */; };
+		E4D963D11DF423760086FAB9 /* SPADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D01DF423760086FAB9 /* SPADViewController.xib */; };
+		E4D963DA1DF425CD0086FAB9 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D31DF425CD0086FAB9 /* LaunchImage-568h@2x.png */; };
+		E4D963DB1DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D41DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png */; };
+		E4D963DC1DF425CD0086FAB9 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D51DF425CD0086FAB9 /* LaunchImage-700@2x.png */; };
+		E4D963DD1DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D61DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png */; };
+		E4D963DE1DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D71DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		E4D963DF1DF425CD0086FAB9 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D81DF425CD0086FAB9 /* LaunchImage.png */; };
+		E4D963E01DF425CD0086FAB9 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D963D91DF425CD0086FAB9 /* LaunchImage@2x.png */; };
+		E4D963E61DF42ADB0086FAB9 /* SPADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D963E51DF42ADB0086FAB9 /* SPADItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +75,18 @@
 		E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ButtonItem.m"; sourceTree = "<group>"; };
 		E4CEFD921DE57687004C1443 /* SPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingViewController.h; sourceTree = "<group>"; };
 		E4CEFD931DE57687004C1443 /* SPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingViewController.m; sourceTree = "<group>"; };
+		E4D963CD1DF41BC10086FAB9 /* SPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADViewController.h; sourceTree = "<group>"; };
+		E4D963CE1DF41BC10086FAB9 /* SPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADViewController.m; sourceTree = "<group>"; };
+		E4D963D01DF423760086FAB9 /* SPADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPADViewController.xib; sourceTree = "<group>"; };
+		E4D963D31DF425CD0086FAB9 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		E4D963D41DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		E4D963D51DF425CD0086FAB9 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		E4D963D61DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		E4D963D71DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		E4D963D81DF425CD0086FAB9 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		E4D963D91DF425CD0086FAB9 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		E4D963E41DF42ADB0086FAB9 /* SPADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADItem.h; sourceTree = "<group>"; };
+		E4D963E51DF42ADB0086FAB9 /* SPADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +121,7 @@
 		E41FDF501DE3F543002572F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E4D963C91DF41B820086FAB9 /* AD */,
 				E41FDF681DE3F543002572F9 /* Main */,
 				E41FDF561DE3F543002572F9 /* Essence */,
 				E41FDF701DE3F543002572F9 /* New */,
@@ -388,6 +411,7 @@
 		E46EECFA1DE3151100E70EC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4D963D21DF425CD0086FAB9 /* 启动图片 */,
 				E46EECFB1DE3151100E70EC7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -424,6 +448,56 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E4D963C91DF41B820086FAB9 /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				E4D963CA1DF41B820086FAB9 /* Controller */,
+				E4D963CB1DF41B820086FAB9 /* Model */,
+				E4D963CC1DF41B820086FAB9 /* View */,
+			);
+			path = AD;
+			sourceTree = "<group>";
+		};
+		E4D963CA1DF41B820086FAB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4D963CD1DF41BC10086FAB9 /* SPADViewController.h */,
+				E4D963CE1DF41BC10086FAB9 /* SPADViewController.m */,
+				E4D963D01DF423760086FAB9 /* SPADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4D963CB1DF41B820086FAB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4D963E41DF42ADB0086FAB9 /* SPADItem.h */,
+				E4D963E51DF42ADB0086FAB9 /* SPADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D963CC1DF41B820086FAB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4D963D21DF425CD0086FAB9 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				E4D963D31DF425CD0086FAB9 /* LaunchImage-568h@2x.png */,
+				E4D963D41DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png */,
+				E4D963D51DF425CD0086FAB9 /* LaunchImage-700@2x.png */,
+				E4D963D61DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png */,
+				E4D963D71DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png */,
+				E4D963D81DF425CD0086FAB9 /* LaunchImage.png */,
+				E4D963D91DF425CD0086FAB9 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,8 +561,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D963D11DF423760086FAB9 /* SPADViewController.xib in Resources */,
+				E4D963DB1DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png in Resources */,
+				E4D963DF1DF425CD0086FAB9 /* LaunchImage.png in Resources */,
 				E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */,
+				E4D963DC1DF425CD0086FAB9 /* LaunchImage-700@2x.png in Resources */,
+				E4D963DE1DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				E4D963DA1DF425CD0086FAB9 /* LaunchImage-568h@2x.png in Resources */,
+				E4D963DD1DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png in Resources */,
 				E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */,
+				E4D963E01DF425CD0086FAB9 /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +635,7 @@
 				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
 				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
 				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
+				E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */,
 				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
@@ -561,6 +644,7 @@
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
 				E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */,
+				E4D963E61DF42ADB0086FAB9 /* SPADItem.m in Sources */,
 				E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

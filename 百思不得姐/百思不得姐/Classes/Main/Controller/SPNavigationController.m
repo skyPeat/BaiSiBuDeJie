@@ -22,7 +22,7 @@
     [self.view addGestureRecognizer:pan];
     pan.delegate = self;
     self.interactivePopGestureRecognizer.enabled = NO;
-    NSLog(@"%@",self.interactivePopGestureRecognizer);
+//    SP_Log(@"%@",self.interactivePopGestureRecognizer)
 }
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
     return self.childViewControllers.count > 1;
