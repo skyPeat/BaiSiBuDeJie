@@ -39,7 +39,7 @@
 
 -(void)setSP_height:(CGFloat)SP_height{
     CGRect frame = self.frame;
-    frame.size.width = SP_height;
+    frame.size.height = SP_height;
     self.frame = frame;
 }
 -(CGFloat)SP_height{

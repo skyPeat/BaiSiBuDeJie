@@ -8,7 +8,7 @@
 
 #import "SPNavigationController.h"
 
-@interface SPNavigationController ()
+@interface SPNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    <UIScreenEdgePanGestureRecognizer: 0x7f81c84803c0; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7f81c847e990>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7f81c84806e0>)>>
+//    添加全屏滑动手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:pan];
+    pan.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
     NSLog(@"%@",self.interactivePopGestureRecognizer);
+}
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return self.childViewControllers.count > 1;
 }
 #pragma mark-
 #pragma mark- 设置导航条的内容
@@ -46,6 +55,6 @@
     [super pushViewController:viewController animated:animated];
 }
 -(void)back{
-    [self.navigationController popViewControllerAnimated:YES];
+    [self popViewControllerAnimated:YES];
 }
 @end
