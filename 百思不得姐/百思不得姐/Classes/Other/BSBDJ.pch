@@ -12,10 +12,13 @@
 /**********屏幕的高宽**********/
 #define SP_ScreenW [UIScreen mainScreen].bounds.size.width
 #define SP_ScreenH [UIScreen mainScreen].bounds.size.height
+#define SP_TopH 64
+#define SP_BottomH 49
 /**********分类**********/
 #import "UIImage+Image.h"
 #import "UIColor+Color.h"
 #import "UIView+Frame.h"
 #import "UIBarButtonItem+ButtonItem.h"
+#import "AFHTTPSessionManager+manager.h"
 #endif
 

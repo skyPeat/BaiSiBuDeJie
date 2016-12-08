@@ -22,6 +22,7 @@
     //    1、创建窗口跟控制器
 //    SPADViewController *rootVC = [[SPADViewController alloc] init];
     SPTabBarController *rootVC = [[SPTabBarController alloc] init];
+    
     //    2、设置窗口跟控制器
     self.window.rootViewController = rootVC;
     //    3、显示窗口

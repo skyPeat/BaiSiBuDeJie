@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFF229C9DD2514AAD70C245F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F350BF1220D7974230D6E8E /* libPods.a */; };
+		83872DCD0C8847D5616FE48B /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 294BAD208A7EC9CC1654023F /* libPods-百思不得姐.a */; };
+		8428C62A1DF80DB300A05150 /* liumenli.png in Resources */ = {isa = PBXBuildFile; fileRef = 8428C6291DF80DB300A05150 /* liumenli.png */; };
+		8428C63E1DF80DCF00A05150 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C62E1DF80DCF00A05150 /* SPFriendTrendViewController.m */; };
+		8428C63F1DF80DCF00A05150 /* SPFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428C62F1DF80DCF00A05150 /* SPFriendTrendViewController.xib */; };
+		8428C6401DF80DCF00A05150 /* SPRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6311DF80DCF00A05150 /* SPRecommendViewController.m */; };
+		8428C6411DF80DCF00A05150 /* SPSubscribItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6341DF80DCF00A05150 /* SPSubscribItem.m */; };
+		8428C6421DF80DCF00A05150 /* SPLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6371DF80DCF00A05150 /* SPLeftButton.m */; };
+		8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6391DF80DCF00A05150 /* SPLeftView.m */; };
+		8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */; };
+		842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */; };
 		E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF531DE3F543002572F9 /* UIColor+Color.m */; };
 		E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF551DE3F543002572F9 /* UIImage+Image.m */; };
 		E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */; };
-		E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */; };
 		E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF651DE3F543002572F9 /* SPHomeViewController.m */; };
 		E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF6B1DE3F543002572F9 /* SPNavigationController.m */; };
 		E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF6D1DE3F543002572F9 /* SPTabBarController.m */; };
@@ -38,17 +46,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		8F350BF1220D7974230D6E8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		294BAD208A7EC9CC1654023F /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8428C6291DF80DB300A05150 /* liumenli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liumenli.png; sourceTree = "<group>"; };
+		8428C62D1DF80DCF00A05150 /* SPFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFriendTrendViewController.h; sourceTree = "<group>"; };
+		8428C62E1DF80DCF00A05150 /* SPFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFriendTrendViewController.m; sourceTree = "<group>"; };
+		8428C62F1DF80DCF00A05150 /* SPFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFriendTrendViewController.xib; sourceTree = "<group>"; };
+		8428C6301DF80DCF00A05150 /* SPRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRecommendViewController.h; sourceTree = "<group>"; };
+		8428C6311DF80DCF00A05150 /* SPRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRecommendViewController.m; sourceTree = "<group>"; };
+		8428C6331DF80DCF00A05150 /* SPSubscribItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSubscribItem.h; sourceTree = "<group>"; };
+		8428C6341DF80DCF00A05150 /* SPSubscribItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSubscribItem.m; sourceTree = "<group>"; };
+		8428C6361DF80DCF00A05150 /* SPLeftButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLeftButton.h; sourceTree = "<group>"; };
+		8428C6371DF80DCF00A05150 /* SPLeftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLeftButton.m; sourceTree = "<group>"; };
+		8428C6381DF80DCF00A05150 /* SPLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLeftView.h; sourceTree = "<group>"; };
+		8428C6391DF80DCF00A05150 /* SPLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLeftView.m; sourceTree = "<group>"; };
+		8428C63C1DF80DCF00A05150 /* SPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTableViewCell.h; sourceTree = "<group>"; };
+		8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
+		842966FC1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+manager.h"; sourceTree = "<group>"; };
+		842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+manager.m"; sourceTree = "<group>"; };
+		B3CF0417215175DA52F98BAD /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		D11FCD9BBADD7D2D469EBA95 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E41FDF521DE3F543002572F9 /* UIColor+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Color.h"; sourceTree = "<group>"; };
 		E41FDF531DE3F543002572F9 /* UIColor+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Color.m"; sourceTree = "<group>"; };
 		E41FDF541DE3F543002572F9 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		E41FDF551DE3F543002572F9 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		E41FDF581DE3F543002572F9 /* SPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEssenceViewController.h; sourceTree = "<group>"; };
 		E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEssenceViewController.m; sourceTree = "<group>"; };
-		E41FDF5E1DE3F543002572F9 /* SPFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFriendTrendViewController.h; sourceTree = "<group>"; };
-		E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFriendTrendViewController.m; sourceTree = "<group>"; };
 		E41FDF641DE3F543002572F9 /* SPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHomeViewController.h; sourceTree = "<group>"; };
 		E41FDF651DE3F543002572F9 /* SPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHomeViewController.m; sourceTree = "<group>"; };
 		E41FDF6A1DE3F543002572F9 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
@@ -94,28 +116,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF229C9DD2514AAD70C245F /* libPods.a in Frameworks */,
+				83872DCD0C8847D5616FE48B /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3ADEDB2F813192A02CEFC7BA /* Pods */ = {
+		6CA0FF9C5509AD03CB07A50F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */,
-				1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */,
+				D11FCD9BBADD7D2D469EBA95 /* Pods-百思不得姐.debug.xcconfig */,
+				B3CF0417215175DA52F98BAD /* Pods-百思不得姐.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E316EC3867D258876412566B /* Frameworks */ = {
+		7086F4ED803F8BA7C41744AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F350BF1220D7974230D6E8E /* libPods.a */,
+				294BAD208A7EC9CC1654023F /* libPods-百思不得姐.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8428C62B1DF80DCF00A05150 /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				8428C62C1DF80DCF00A05150 /* Controller */,
+				8428C6321DF80DCF00A05150 /* Model */,
+				8428C6351DF80DCF00A05150 /* View */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		8428C62C1DF80DCF00A05150 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8428C62D1DF80DCF00A05150 /* SPFriendTrendViewController.h */,
+				8428C62E1DF80DCF00A05150 /* SPFriendTrendViewController.m */,
+				8428C62F1DF80DCF00A05150 /* SPFriendTrendViewController.xib */,
+				8428C6301DF80DCF00A05150 /* SPRecommendViewController.h */,
+				8428C6311DF80DCF00A05150 /* SPRecommendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8428C6321DF80DCF00A05150 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8428C6331DF80DCF00A05150 /* SPSubscribItem.h */,
+				8428C6341DF80DCF00A05150 /* SPSubscribItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8428C6351DF80DCF00A05150 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8428C6361DF80DCF00A05150 /* SPLeftButton.h */,
+				8428C6371DF80DCF00A05150 /* SPLeftButton.m */,
+				8428C6381DF80DCF00A05150 /* SPLeftView.h */,
+				8428C6391DF80DCF00A05150 /* SPLeftView.m */,
+				8428C63C1DF80DCF00A05150 /* SPTableViewCell.h */,
+				8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E41FDF501DE3F543002572F9 /* Classes */ = {
@@ -126,7 +192,7 @@
 				E41FDF561DE3F543002572F9 /* Essence */,
 				E41FDF701DE3F543002572F9 /* New */,
 				E41FDF791DE3F543002572F9 /* Publish */,
-				E41FDF5C1DE3F543002572F9 /* FriendTrend */,
+				8428C62B1DF80DCF00A05150 /* FriendTrend */,
 				E41FDF621DE3F543002572F9 /* Home */,
 				E4CEFD8E1DE57666004C1443 /* Setting */,
 				E41FDF761DE3F543002572F9 /* Other */,
@@ -146,6 +212,8 @@
 				E41FDF8D1DE42C92002572F9 /* UIView+Frame.m */,
 				E4CEFD8B1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.h */,
 				E4CEFD8C1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m */,
+				842966FC1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.h */,
+				842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -177,39 +245,6 @@
 			sourceTree = "<group>";
 		};
 		E41FDF5B1DE3F543002572F9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E41FDF5C1DE3F543002572F9 /* FriendTrend */ = {
-			isa = PBXGroup;
-			children = (
-				E41FDF5D1DE3F543002572F9 /* Controller */,
-				E41FDF601DE3F543002572F9 /* Model */,
-				E41FDF611DE3F543002572F9 /* View */,
-			);
-			path = FriendTrend;
-			sourceTree = "<group>";
-		};
-		E41FDF5D1DE3F543002572F9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E41FDF5E1DE3F543002572F9 /* SPFriendTrendViewController.h */,
-				E41FDF5F1DE3F543002572F9 /* SPFriendTrendViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E41FDF601DE3F543002572F9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E41FDF611DE3F543002572F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -374,6 +409,7 @@
 				E46EED061DE3151100E70EC7 /* Assets.xcassets */,
 				E46EED081DE3151100E70EC7 /* LaunchScreen.storyboard */,
 				E46EED0B1DE3151100E70EC7 /* Info.plist */,
+				8428C6291DF80DB300A05150 /* liumenli.png */,
 				E46EECFA1DE3151100E70EC7 /* Supporting Files */,
 			);
 			name = Resource;
@@ -384,8 +420,8 @@
 			children = (
 				E46EECF91DE3151100E70EC7 /* 百思不得姐 */,
 				E46EECF81DE3151100E70EC7 /* Products */,
-				3ADEDB2F813192A02CEFC7BA /* Pods */,
-				E316EC3867D258876412566B /* Frameworks */,
+				6CA0FF9C5509AD03CB07A50F /* Pods */,
+				7086F4ED803F8BA7C41744AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -507,12 +543,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46EED0E1DE3151100E70EC7 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
-				0294FC72EDD9F517E4F29D8A /* Check Pods Manifest.lock */,
+				0E73BBA695A6A433922FAD15 /* [CP] Check Pods Manifest.lock */,
 				E46EECF31DE3151100E70EC7 /* Sources */,
 				E46EECF41DE3151100E70EC7 /* Frameworks */,
 				E46EECF51DE3151100E70EC7 /* Resources */,
-				7C9647D63691023E3856CB3F /* Embed Pods Frameworks */,
-				3C80E524F6C0FC542E56A4E8 /* Copy Pods Resources */,
+				31839ECBA64021E815E120D9 /* [CP] Embed Pods Frameworks */,
+				DE6F7FA3CF2AE5266D15D39C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -562,11 +598,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D963D11DF423760086FAB9 /* SPADViewController.xib in Resources */,
+				8428C62A1DF80DB300A05150 /* liumenli.png in Resources */,
 				E4D963DB1DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png in Resources */,
 				E4D963DF1DF425CD0086FAB9 /* LaunchImage.png in Resources */,
 				E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */,
 				E4D963DC1DF425CD0086FAB9 /* LaunchImage-700@2x.png in Resources */,
 				E4D963DE1DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				8428C63F1DF80DCF00A05150 /* SPFriendTrendViewController.xib in Resources */,
 				E4D963DA1DF425CD0086FAB9 /* LaunchImage-568h@2x.png in Resources */,
 				E4D963DD1DF425CD0086FAB9 /* LaunchImage-800-667h@2x.png in Resources */,
 				E46EED071DE3151100E70EC7 /* Assets.xcassets in Resources */,
@@ -577,49 +615,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0294FC72EDD9F517E4F29D8A /* Check Pods Manifest.lock */ = {
+		0E73BBA695A6A433922FAD15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3C80E524F6C0FC542E56A4E8 /* Copy Pods Resources */ = {
+		31839ECBA64021E815E120D9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C9647D63691023E3856CB3F /* Embed Pods Frameworks */ = {
+		DE6F7FA3CF2AE5266D15D39C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -630,6 +668,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46EECFF1DE3151100E70EC7 /* AppDelegate.m in Sources */,
+				8428C63E1DF80DCF00A05150 /* SPFriendTrendViewController.m in Sources */,
+				8428C6411DF80DCF00A05150 /* SPSubscribItem.m in Sources */,
 				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
 				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
 				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
@@ -638,14 +678,18 @@
 				E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */,
 				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
+				8428C6421DF80DCF00A05150 /* SPLeftButton.m in Sources */,
+				842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */,
+				8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */,
+				8428C6401DF80DCF00A05150 /* SPRecommendViewController.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
 				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
 				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
+				8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */,
 				E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */,
 				E4D963E61DF42ADB0086FAB9 /* SPADItem.m in Sources */,
-				E41FDF821DE3F543002572F9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +789,7 @@
 		};
 		E46EED0F1DE3151100E70EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45BE27D66FC464E45D235FCA /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D11FCD9BBADD7D2D469EBA95 /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -761,7 +805,7 @@
 		};
 		E46EED101DE3151100E70EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A9F20CFB71581A964472FB7 /* Pods.release.xcconfig */;
+			baseConfigurationReference = B3CF0417215175DA52F98BAD /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

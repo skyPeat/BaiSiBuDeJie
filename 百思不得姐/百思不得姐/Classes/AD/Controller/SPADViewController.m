@@ -8,7 +8,6 @@
 
 #import "SPADViewController.h"
 #import "SPADItem.h"
-#import "AFNetworking.h"
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "SPTabBarController.h"
@@ -98,7 +97,7 @@
     NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
     parameter[@"code2"] = code;
 //    2、发送GET请求数据
-    [maneger GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [maneger SP_GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameter  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
 //        获取广告数据
         NSDictionary *dict = [responseObject[@"ad"] firstObject];
@@ -116,3 +115,4 @@
     }];
 }
 @end
+ 
