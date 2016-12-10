@@ -11,4 +11,6 @@
 @interface UIImage (Image)
 //返回一张没有背渲染的图片
 +(UIImage *)imageNamedWithOriginal:(NSString *)imageName;
+//绘制圆角图片
++(UIImage *)roundImage:(UIImage *)image placeholderImage:(UIImage *)placeholderImage;
 @end

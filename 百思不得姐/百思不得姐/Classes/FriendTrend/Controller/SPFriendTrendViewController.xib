@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPFriendTrendViewController">
             <connections>
                 <outlet property="centerView" destination="c17-Kf-pZr" id="zDR-td-QCN"/>
+                <outlet property="loginButton" destination="x47-1H-NWu" id="QE2-ic-rr9"/>
+                <outlet property="registerButton" destination="tde-sb-TAB" id="Wft-nl-pbd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="imP-e3-7z9"/>
             </connections>
         </placeholder>
@@ -38,6 +40,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="loginRegisterClick:" destination="-1" eventType="touchUpInside" id="6CV-BH-Efe"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-B2-ucy">
                     <rect key="frame" x="177" y="503" width="107.5" height="35"/>
@@ -49,6 +54,9 @@
                             <state key="normal" title="注册">
                                 <color key="titleColor" red="1" green="0.13530637277341484" blue="0.17486958670279285" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="loginRegisterClick:" destination="-1" eventType="touchUpInside" id="DG5-gE-U6K"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.13530637279999999" blue="0.1748695867" alpha="0.63807624113475181" colorSpace="calibratedRGB"/>

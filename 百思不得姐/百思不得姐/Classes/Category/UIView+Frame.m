@@ -46,6 +46,28 @@
     return self.frame.size.height;
 }
 
+- (void)setSP_centerX:(CGFloat)SP_centerX
+{
+    CGPoint center = self.center;
+    center.x = SP_centerX;
+    self.center = center;
+}
+- (CGFloat)SP_centerX
+{
+    return self.center.x;
+}
+
+- (void)setSP_centerY:(CGFloat)SP_centerY
+{
+    CGPoint center = self.center;
+    center.y = SP_centerY;
+    self.center = center;
+}
+- (CGFloat)SP_centerY
+{
+    return self.center.y;
+}
+
 -(void)setSP_center:(CGPoint)SP_center{
     CGRect bounds = self.bounds;
     bounds.origin.x = SP_center.x - bounds.size.width / 2.0;

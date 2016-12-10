@@ -8,8 +8,11 @@
 
 #import "SPFriendTrendViewController.h"
 #import "SPRecommendViewController.h"
+#import "SPLoginRegisterViewController.h"
 @interface SPFriendTrendViewController ()
 @property (weak, nonatomic) IBOutlet UIView *centerView;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -20,6 +23,7 @@
     [self setCenterView];
     //    0、设置导航条的内容
     [self setUpNavigationBar];
+//    1、设置登录注册界面
     
 }
 #pragma mark-
@@ -42,4 +46,14 @@
     imageView.image = [UIImage imageNamed:@"liumenli"];
     [self.centerView addSubview:imageView];
 }
+#pragma mark- 登录注册界面
+- (IBAction)loginRegisterClick:(UIButton *)sender {
+    SPLoginRegisterViewController *loginRegisterVC = [[SPLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterVC animated:YES completion:^{
+        
+    }];
+}
+
+
+
 @end

@@ -17,6 +17,13 @@
 		8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6391DF80DCF00A05150 /* SPLeftView.m */; };
 		8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */; };
 		842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */; };
+		84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */; };
+		84C5BAF01DFA59C900C03DB3 /* SPLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */; };
+		84C5BAF31DFB01CC00C03DB3 /* SPLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAF21DFB01CC00C03DB3 /* SPLoginRegisterView.m */; };
+		84C5BAF51DFB01DB00C03DB3 /* SPLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAF41DFB01DB00C03DB3 /* SPLoginRegisterView.xib */; };
+		84C5BAF81DFB164700C03DB3 /* SPFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAF71DFB164700C03DB3 /* SPFastLoginView.m */; };
+		84C5BAFA1DFB165500C03DB3 /* SPFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAF91DFB165500C03DB3 /* SPFastLoginView.xib */; };
+		84C5BAFD1DFB16A300C03DB3 /* SPFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAFC1DFB16A300C03DB3 /* SPFastLoginButton.m */; };
 		E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF531DE3F543002572F9 /* UIColor+Color.m */; };
 		E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF551DE3F543002572F9 /* UIImage+Image.m */; };
 		E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */; };
@@ -63,6 +70,17 @@
 		8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
 		842966FC1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+manager.h"; sourceTree = "<group>"; };
 		842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+manager.m"; sourceTree = "<group>"; };
+		84C5BAEC1DFA59C900C03DB3 /* SPLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoginRegisterViewController.h; sourceTree = "<group>"; };
+		84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoginRegisterViewController.m; sourceTree = "<group>"; };
+		84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		84C5BAF11DFB01CC00C03DB3 /* SPLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoginRegisterView.h; sourceTree = "<group>"; };
+		84C5BAF21DFB01CC00C03DB3 /* SPLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoginRegisterView.m; sourceTree = "<group>"; };
+		84C5BAF41DFB01DB00C03DB3 /* SPLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoginRegisterView.xib; sourceTree = "<group>"; };
+		84C5BAF61DFB164700C03DB3 /* SPFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFastLoginView.h; sourceTree = "<group>"; };
+		84C5BAF71DFB164700C03DB3 /* SPFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFastLoginView.m; sourceTree = "<group>"; };
+		84C5BAF91DFB165500C03DB3 /* SPFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFastLoginView.xib; sourceTree = "<group>"; };
+		84C5BAFB1DFB16A300C03DB3 /* SPFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFastLoginButton.h; sourceTree = "<group>"; };
+		84C5BAFC1DFB16A300C03DB3 /* SPFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFastLoginButton.m; sourceTree = "<group>"; };
 		B3CF0417215175DA52F98BAD /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		D11FCD9BBADD7D2D469EBA95 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E41FDF521DE3F543002572F9 /* UIColor+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Color.h"; sourceTree = "<group>"; };
@@ -158,6 +176,9 @@
 				8428C62F1DF80DCF00A05150 /* SPFriendTrendViewController.xib */,
 				8428C6301DF80DCF00A05150 /* SPRecommendViewController.h */,
 				8428C6311DF80DCF00A05150 /* SPRecommendViewController.m */,
+				84C5BAEC1DFA59C900C03DB3 /* SPLoginRegisterViewController.h */,
+				84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */,
+				84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +201,14 @@
 				8428C6391DF80DCF00A05150 /* SPLeftView.m */,
 				8428C63C1DF80DCF00A05150 /* SPTableViewCell.h */,
 				8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */,
+				84C5BAF11DFB01CC00C03DB3 /* SPLoginRegisterView.h */,
+				84C5BAF21DFB01CC00C03DB3 /* SPLoginRegisterView.m */,
+				84C5BAF41DFB01DB00C03DB3 /* SPLoginRegisterView.xib */,
+				84C5BAF61DFB164700C03DB3 /* SPFastLoginView.h */,
+				84C5BAF71DFB164700C03DB3 /* SPFastLoginView.m */,
+				84C5BAF91DFB165500C03DB3 /* SPFastLoginView.xib */,
+				84C5BAFB1DFB16A300C03DB3 /* SPFastLoginButton.h */,
+				84C5BAFC1DFB16A300C03DB3 /* SPFastLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -597,9 +626,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5BAF51DFB01DB00C03DB3 /* SPLoginRegisterView.xib in Resources */,
+				84C5BAF01DFA59C900C03DB3 /* SPLoginRegisterViewController.xib in Resources */,
 				E4D963D11DF423760086FAB9 /* SPADViewController.xib in Resources */,
 				8428C62A1DF80DB300A05150 /* liumenli.png in Resources */,
 				E4D963DB1DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png in Resources */,
+				84C5BAFA1DFB165500C03DB3 /* SPFastLoginView.xib in Resources */,
 				E4D963DF1DF425CD0086FAB9 /* LaunchImage.png in Resources */,
 				E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */,
 				E4D963DC1DF425CD0086FAB9 /* LaunchImage-700@2x.png in Resources */,
@@ -672,16 +704,20 @@
 				8428C6411DF80DCF00A05150 /* SPSubscribItem.m in Sources */,
 				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
 				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
+				84C5BAF81DFB164700C03DB3 /* SPFastLoginView.m in Sources */,
 				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
 				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
 				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
 				E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */,
 				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
+				84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */,
+				84C5BAF31DFB01CC00C03DB3 /* SPLoginRegisterView.m in Sources */,
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
 				8428C6421DF80DCF00A05150 /* SPLeftButton.m in Sources */,
 				842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */,
 				8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */,
 				8428C6401DF80DCF00A05150 /* SPRecommendViewController.m in Sources */,
+				84C5BAFD1DFB16A300C03DB3 /* SPFastLoginButton.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
 				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
 				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,

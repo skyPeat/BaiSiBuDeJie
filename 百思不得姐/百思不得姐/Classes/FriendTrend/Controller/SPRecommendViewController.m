@@ -11,10 +11,12 @@
 #import "SPSubscribItem.h"
 #import "SPTableViewCell.h"
 #import <MJExtension/MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 @interface SPRecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,weak) SPLeftView *leftView;
 @property(nonatomic,weak) UITableView *rightView;
 @property(nonatomic,strong) NSMutableArray *dataArray;
+@property(nonatomic,strong)NSURLSessionDataTask *task;
 @end
 
 @implementation SPRecommendViewController
@@ -27,10 +29,12 @@ static NSString *ID = @"cell";
     [self setUpNavigationBar];
 //    1、添加子控件
     [self addChildViews];
+//    设置分割线占据全屏
+    self.rightView.separatorInset = UIEdgeInsetsZero;
 //    2、设置数据
     [self loadData];
     [self.rightView registerClass:[SPTableViewCell class] forCellReuseIdentifier:ID];
-    self.rightView.rowHeight = 70;
+    self.rightView.rowHeight = 80;
 }
 #pragma mark- 设置界面标题
 -(void)setUpNavigationBar{
@@ -85,8 +89,12 @@ static NSString *ID = @"cell";
     NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
     parameter[@"a"] = @"friend_recommend";
     parameter[@"c"] = @"user";
+//    提示用户正在加载数据
+    [SVProgressHUD showWithStatus:@"正在玩命的加载数据......"];
 //    2、发送请求
-    [manger SP_GET:@"http://api.budejie.com/api/api_open.php" parameters:parameter success:^(NSURLSessionDataTask *task, id responseObject) {
+    self.task = [manger SP_GET:@"http://api.budejie.com/api/api_open.php" parameters:parameter success:^(NSURLSessionDataTask *task, id responseObject) {
+//        移除指示器
+        [SVProgressHUD dismiss];
 //    3、字典转模型
         NSArray *array = responseObject[@"top_list"];
 //    4、字典数组转化模型数组
@@ -94,7 +102,8 @@ static NSString *ID = @"cell";
 //    5、刷行数据
         [self.rightView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
+        //        移除指示器
+        [SVProgressHUD dismiss];
     }];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -106,5 +115,11 @@ static NSString *ID = @"cell";
     SPSubscribItem *item = self.dataArray[indexPath.row];
     cell.item = item;
     return cell;
+}
+-(void)viewWillDisappear:(BOOL)animated{
+//    移除指示器
+    [SVProgressHUD dismiss];
+//    取消请求
+    [self.task cancel];
 }
 @end

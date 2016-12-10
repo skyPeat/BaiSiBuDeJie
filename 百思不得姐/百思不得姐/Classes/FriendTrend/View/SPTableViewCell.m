@@ -70,7 +70,7 @@
         }];
         //       关注按钮
         
-        UIButton *subscribButton = [[UIButton alloc] init];
+        UIButton *subscribButton = [UIButton buttonWithType:UIButtonTypeCustom];
         subscribButton.backgroundColor = SP_Color(240, 240, 240);
         [subscribButton setTitle:@"+ 关注" forState:UIControlStateNormal];
         [subscribButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -88,19 +88,29 @@
     _item = item;
 //    设置昵称
     self.titleLabel.text = item.screen_name;
-//    设置头像
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.header] placeholderImage:nil];
+//    设置圆形头像
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.header] placeholderImage:[UIImage imageNamed:@"lml"] options:kNilOptions completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.iconImageView.image = [UIImage roundImage:image placeholderImage:[UIImage imageNamed:@"lml"]];
+    }];
+//    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.header] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        
+//        self.iconImageView.image = [UIImage roundImage:image placeholderImage:[UIImage imageNamed:@"lml"]];
+//        SP_Log(@"%@",NSStringFromClass([self.iconImageView.image class]));
+//    }];
 //    设置关注人数
     NSInteger count = item.fans_count.integerValue;
     NSString *countStr = [NSString stringWithFormat:@"%@人关注",item.fans_count];
     if (count >= 10000) {
-        countStr = [NSString stringWithFormat:@"%zd万人关注",count * 0.0001];
+        countStr = [NSString stringWithFormat:@"%.1f万人关注",count * 0.0001];
     }
+    countStr = [countStr stringByReplacingOccurrencesOfString:@".00" withString:@""];
     self.detailLabel.text = countStr;
 //    是否是VIP
-    if (!item.isVIP) self.vipImageView.hidden = YES;
+    if (item.isVIP){
     self.vipImageView.image = [UIImage imageNamed:@"vip"];
-    
+    }else{
+     self.vipImageView.hidden = YES;
+    }
 }
 
 @end

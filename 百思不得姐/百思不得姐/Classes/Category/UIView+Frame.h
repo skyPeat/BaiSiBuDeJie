@@ -14,4 +14,6 @@
 @property CGFloat SP_width;
 @property CGFloat SP_height;
 @property CGPoint SP_center;
+@property CGFloat SP_centerX;
+@property CGFloat SP_centerY;
 @end
