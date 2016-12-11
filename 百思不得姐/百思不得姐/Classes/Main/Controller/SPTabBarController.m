@@ -47,7 +47,9 @@
 //    friendTrend
     [self childViewController:[[SPFriendTrendViewController alloc] init] title:@"关注" normalImage:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_friendTrends_click_icon"]];
 //    me
-    [self childViewController:[[SPHomeViewController alloc] init] title:@"我的" normalImage:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_me_click_icon"]];
+//    从storyboard加载控制器
+    UIStoryboard *homeStoryboardVC = [UIStoryboard storyboardWithName:@"SPHomeViewController" bundle:nil];
+    [self childViewController:[homeStoryboardVC instantiateInitialViewController] title:@"我的" normalImage:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_me_click_icon"]];
 }
 -(void)childViewController:(UIViewController *)viewController title:(NSString *)title normalImage:(UIImage *)normalImage selectedImage:(UIImage *)selectedImage{
     viewController.title = title;
