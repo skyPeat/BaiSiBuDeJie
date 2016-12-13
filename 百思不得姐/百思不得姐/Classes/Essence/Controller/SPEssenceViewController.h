@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPEssenceViewController : UITableViewController
+@interface SPEssenceViewController : UIViewController
 
 @end

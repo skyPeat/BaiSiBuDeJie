@@ -11,11 +11,12 @@
 #import "SPSquareItem.h"
 #import "SPCollectionViewCell.h"
 #import <MJExtension.h>
+#import <SafariServices/SafariServices.h>
 static NSString *ID = @"cell";
 static NSInteger rank = 4;
 #define margin  1
 #define itemWH (SP_ScreenW - (rank - 1) * margin) / rank
-@interface SPHomeViewController ()<UICollectionViewDataSource>
+@interface SPHomeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,strong)NSMutableArray *squareArray;
 @property(nonatomic,weak) UICollectionView *collectionView;
 @end
@@ -63,11 +64,12 @@ static NSInteger rank = 4;
     flowLayout.minimumInteritemSpacing = margin;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:flowLayout];
-    collectionView.backgroundColor = SP_Color(245, 245, 245);
+    collectionView.backgroundColor = SP_Color(215, 215, 215);
     self.collectionView = collectionView;
     self.tableView.tableFooterView = collectionView;
 //    设置数据源
     collectionView.dataSource = self;
+    collectionView.delegate = self;
     //    注册一个collectionViewCell
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([SPCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:ID];
     
@@ -82,6 +84,20 @@ static NSInteger rank = 4;
     SPSquareItem *item = self.squareArray[indexPath.row];
     cell.item = item;
     return cell;
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+//    取出模型
+    SPSquareItem *item = self.squareArray[indexPath.row];
+//    判断url是否包含http
+    if ([item.url hasPrefix:@"http"]) {
+
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:item.url]];//该方法会自动跳转到safri,离开当前应用
+        //2.UIWebView ,功能单一.只是打开一般的网页.没有地址栏,没有进度条
+        SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:item.url]];
+        [self presentViewController:safariVC animated:YES completion:nil];
+    }else{
+        
+    }
 }
 #pragma mark- 加载数据
 -(void)loadData{
@@ -104,7 +120,7 @@ static NSInteger rank = 4;
 //    设置collectionView的高度
         NSInteger count = self.squareArray.count;
         NSInteger row = (count - 1) / rank + 1;
-        CGFloat collectionViewH = row * itemWH + (row - 1) * margin;
+        CGFloat collectionViewH = row * (itemWH + margin);
         self.collectionView.SP_height = collectionViewH;
         self.tableView.tableFooterView = self.collectionView;
     } failure:^(NSURLSessionDataTask *task, NSError *error) {

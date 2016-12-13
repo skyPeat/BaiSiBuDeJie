@@ -21,6 +21,11 @@
 		8461E1AA1DFC6E92004284F8 /* SPSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461E1A91DFC6E92004284F8 /* SPSquareItem.m */; };
 		8461E1AE1DFC6EEB004284F8 /* SPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461E1AC1DFC6EEB004284F8 /* SPCollectionViewCell.m */; };
 		8461E1AF1DFC6EEB004284F8 /* SPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8461E1AD1DFC6EEB004284F8 /* SPCollectionViewCell.xib */; };
+		847879FD1DFD7D090004698D /* SPAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847879FC1DFD7D090004698D /* SPAllViewController.m */; };
+		84787A001DFD7D300004698D /* SPVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847879FF1DFD7D300004698D /* SPVideosViewController.m */; };
+		84787A031DFD7D430004698D /* SPPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A021DFD7D430004698D /* SPPicturesViewController.m */; };
+		84787A061DFD7D510004698D /* SPTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A051DFD7D510004698D /* SPTextViewController.m */; };
+		84787A091DFD7FBE0004698D /* SPTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A081DFD7FBE0004698D /* SPTitleButton.m */; };
 		84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */; };
 		84C5BAF01DFA59C900C03DB3 /* SPLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */; };
 		84C5BAF31DFB01CC00C03DB3 /* SPLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAF21DFB01CC00C03DB3 /* SPLoginRegisterView.m */; };
@@ -28,6 +33,7 @@
 		84C5BAF81DFB164700C03DB3 /* SPFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAF71DFB164700C03DB3 /* SPFastLoginView.m */; };
 		84C5BAFA1DFB165500C03DB3 /* SPFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAF91DFB165500C03DB3 /* SPFastLoginView.xib */; };
 		84C5BAFD1DFB16A300C03DB3 /* SPFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAFC1DFB16A300C03DB3 /* SPFastLoginButton.m */; };
+		84C877921DFE4EAA0067CFEE /* SPVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C877911DFE4EAA0067CFEE /* SPVoiceViewController.m */; };
 		E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF531DE3F543002572F9 /* UIColor+Color.m */; };
 		E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF551DE3F543002572F9 /* UIImage+Image.m */; };
 		E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */; };
@@ -80,6 +86,16 @@
 		8461E1AB1DFC6EEB004284F8 /* SPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCollectionViewCell.h; path = "百思不得姐/Classes/Home/Controller/SPCollectionViewCell.h"; sourceTree = SOURCE_ROOT; };
 		8461E1AC1DFC6EEB004284F8 /* SPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCollectionViewCell.m; path = "百思不得姐/Classes/Home/Controller/SPCollectionViewCell.m"; sourceTree = SOURCE_ROOT; };
 		8461E1AD1DFC6EEB004284F8 /* SPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPCollectionViewCell.xib; path = "百思不得姐/Classes/Home/Controller/SPCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		847879FB1DFD7D090004698D /* SPAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAllViewController.h; sourceTree = "<group>"; };
+		847879FC1DFD7D090004698D /* SPAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAllViewController.m; sourceTree = "<group>"; };
+		847879FE1DFD7D300004698D /* SPVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideosViewController.h; sourceTree = "<group>"; };
+		847879FF1DFD7D300004698D /* SPVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideosViewController.m; sourceTree = "<group>"; };
+		84787A011DFD7D430004698D /* SPPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPicturesViewController.h; sourceTree = "<group>"; };
+		84787A021DFD7D430004698D /* SPPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPicturesViewController.m; sourceTree = "<group>"; };
+		84787A041DFD7D510004698D /* SPTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTextViewController.h; sourceTree = "<group>"; };
+		84787A051DFD7D510004698D /* SPTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTextViewController.m; sourceTree = "<group>"; };
+		84787A071DFD7FBE0004698D /* SPTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTitleButton.h; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTitleButton.h"; sourceTree = SOURCE_ROOT; };
+		84787A081DFD7FBE0004698D /* SPTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTitleButton.m; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTitleButton.m"; sourceTree = SOURCE_ROOT; };
 		84C5BAEC1DFA59C900C03DB3 /* SPLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoginRegisterViewController.h; sourceTree = "<group>"; };
 		84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoginRegisterViewController.m; sourceTree = "<group>"; };
 		84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoginRegisterViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +107,8 @@
 		84C5BAF91DFB165500C03DB3 /* SPFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFastLoginView.xib; sourceTree = "<group>"; };
 		84C5BAFB1DFB16A300C03DB3 /* SPFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFastLoginButton.h; sourceTree = "<group>"; };
 		84C5BAFC1DFB16A300C03DB3 /* SPFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFastLoginButton.m; sourceTree = "<group>"; };
+		84C877901DFE4EAA0067CFEE /* SPVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVoiceViewController.h; sourceTree = "<group>"; };
+		84C877911DFE4EAA0067CFEE /* SPVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVoiceViewController.m; sourceTree = "<group>"; };
 		B3CF0417215175DA52F98BAD /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		D11FCD9BBADD7D2D469EBA95 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E41FDF521DE3F543002572F9 /* UIColor+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Color.h"; sourceTree = "<group>"; };
@@ -223,6 +241,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		847879FA1DFD78B30004698D /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				847879FB1DFD7D090004698D /* SPAllViewController.h */,
+				847879FC1DFD7D090004698D /* SPAllViewController.m */,
+				847879FE1DFD7D300004698D /* SPVideosViewController.h */,
+				847879FF1DFD7D300004698D /* SPVideosViewController.m */,
+				84C877901DFE4EAA0067CFEE /* SPVoiceViewController.h */,
+				84C877911DFE4EAA0067CFEE /* SPVoiceViewController.m */,
+				84787A011DFD7D430004698D /* SPPicturesViewController.h */,
+				84787A021DFD7D430004698D /* SPPicturesViewController.m */,
+				84787A041DFD7D510004698D /* SPTextViewController.h */,
+				84787A051DFD7D510004698D /* SPTextViewController.m */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
 		E41FDF501DE3F543002572F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +307,7 @@
 			children = (
 				E41FDF581DE3F543002572F9 /* SPEssenceViewController.h */,
 				E41FDF591DE3F543002572F9 /* SPEssenceViewController.m */,
+				847879FA1DFD78B30004698D /* ChildViewControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +322,8 @@
 		E41FDF5B1DE3F543002572F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84787A071DFD7FBE0004698D /* SPTitleButton.h */,
+				84787A081DFD7FBE0004698D /* SPTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -611,7 +649,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SP;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = skyPeat;
 				TargetAttributes = {
 					E46EECF61DE3151100E70EC7 = {
@@ -722,12 +760,16 @@
 				8428C6411DF80DCF00A05150 /* SPSubscribItem.m in Sources */,
 				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
 				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
+				84787A091DFD7FBE0004698D /* SPTitleButton.m in Sources */,
 				84C5BAF81DFB164700C03DB3 /* SPFastLoginView.m in Sources */,
+				84787A031DFD7D430004698D /* SPPicturesViewController.m in Sources */,
 				8461E1AE1DFC6EEB004284F8 /* SPCollectionViewCell.m in Sources */,
+				84C877921DFE4EAA0067CFEE /* SPVoiceViewController.m in Sources */,
 				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
 				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
 				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
 				E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */,
+				847879FD1DFD7D090004698D /* SPAllViewController.m in Sources */,
 				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
 				84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */,
 				8461E1AA1DFC6E92004284F8 /* SPSquareItem.m in Sources */,
@@ -740,10 +782,12 @@
 				84C5BAFD1DFB16A300C03DB3 /* SPFastLoginButton.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
 				E41FDF861DE3F543002572F9 /* SPNewViewController.m in Sources */,
+				84787A061DFD7D510004698D /* SPTextViewController.m in Sources */,
 				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
 				8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */,
+				84787A001DFD7D300004698D /* SPVideosViewController.m in Sources */,
 				E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */,
 				E4D963E61DF42ADB0086FAB9 /* SPADItem.m in Sources */,
 			);
@@ -776,8 +820,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -799,7 +845,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -819,8 +865,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -836,7 +884,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -852,7 +900,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/BSBDJ.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WYptf.www.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -868,7 +916,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/BSBDJ.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WYptf.www.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
