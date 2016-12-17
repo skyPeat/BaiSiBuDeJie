@@ -6,7 +6,7 @@
 //  Copyright © 2016年 skyPeat. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SPBaseViewController.h"
 
 @interface SPVideosViewController : UITableViewController
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		83872DCD0C8847D5616FE48B /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 294BAD208A7EC9CC1654023F /* libPods-百思不得姐.a */; };
+		842135191E00D1CF0050F143 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842135181E00D1CF0050F143 /* SPBaseViewController.m */; };
+		8421351C1E00D7FE0050F143 /* SPTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421351B1E00D7FE0050F143 /* SPTopicItem.m */; };
 		8428C62A1DF80DB300A05150 /* liumenli.png in Resources */ = {isa = PBXBuildFile; fileRef = 8428C6291DF80DB300A05150 /* liumenli.png */; };
 		8428C63E1DF80DCF00A05150 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C62E1DF80DCF00A05150 /* SPFriendTrendViewController.m */; };
 		8428C63F1DF80DCF00A05150 /* SPFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428C62F1DF80DCF00A05150 /* SPFriendTrendViewController.xib */; };
@@ -17,6 +19,13 @@
 		8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C6391DF80DCF00A05150 /* SPLeftView.m */; };
 		8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */; };
 		842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */; };
+		8440629C1E02733D00A01194 /* SPTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440629B1E02733D00A01194 /* SPTopicCell.m */; };
+		8440629F1E02758A00A01194 /* SPTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440629E1E02758A00A01194 /* SPTopView.m */; };
+		844062A31E0277D300A01194 /* SPTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844062A21E0277D300A01194 /* SPTopView.xib */; };
+		844062A71E0290E300A01194 /* SPTopicViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 844062A61E0290E300A01194 /* SPTopicViewItem.m */; };
+		844062AA1E0295F400A01194 /* SPMiddlePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844062A91E0295F400A01194 /* SPMiddlePictureView.m */; };
+		844062AC1E02967500A01194 /* SPMiddlePictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844062AB1E02967500A01194 /* SPMiddlePictureView.xib */; };
+		844062B21E029FB600A01194 /* SPBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844062B11E029FB600A01194 /* SPBaseView.m */; };
 		8461E1A71DFC6172004284F8 /* SPHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8461E1A61DFC6172004284F8 /* SPHomeViewController.storyboard */; };
 		8461E1AA1DFC6E92004284F8 /* SPSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461E1A91DFC6E92004284F8 /* SPSquareItem.m */; };
 		8461E1AE1DFC6EEB004284F8 /* SPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461E1AC1DFC6EEB004284F8 /* SPCollectionViewCell.m */; };
@@ -26,6 +35,13 @@
 		84787A031DFD7D430004698D /* SPPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A021DFD7D430004698D /* SPPicturesViewController.m */; };
 		84787A061DFD7D510004698D /* SPTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A051DFD7D510004698D /* SPTextViewController.m */; };
 		84787A091DFD7FBE0004698D /* SPTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84787A081DFD7FBE0004698D /* SPTitleButton.m */; };
+		847AE9821E04241D007CFE48 /* SPMiddleVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AE9811E04241D007CFE48 /* SPMiddleVideoView.m */; };
+		847AE9841E042456007CFE48 /* SPMiddleVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AE9831E042456007CFE48 /* SPMiddleVideoView.xib */; };
+		847AE9871E043210007CFE48 /* SPMiddleVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AE9861E043210007CFE48 /* SPMiddleVoiceView.m */; };
+		847AE9891E04324D007CFE48 /* SPMiddleVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AE9881E04324D007CFE48 /* SPMiddleVoiceView.xib */; };
+		847AE98C1E043695007CFE48 /* SPCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AE98B1E043695007CFE48 /* SPCommentView.m */; };
+		847AE98E1E0436F6007CFE48 /* SPCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AE98D1E0436F6007CFE48 /* SPCommentView.xib */; };
+		847AE9911E04C3FE007CFE48 /* SPUserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AE9901E04C3FE007CFE48 /* SPUserItem.m */; };
 		84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */; };
 		84C5BAF01DFA59C900C03DB3 /* SPLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */; };
 		84C5BAF31DFB01CC00C03DB3 /* SPLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5BAF21DFB01CC00C03DB3 /* SPLoginRegisterView.m */; };
@@ -64,6 +80,10 @@
 
 /* Begin PBXFileReference section */
 		294BAD208A7EC9CC1654023F /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		842135171E00D1CF0050F143 /* SPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseViewController.h; sourceTree = "<group>"; };
+		842135181E00D1CF0050F143 /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseViewController.m; sourceTree = "<group>"; };
+		8421351A1E00D7FE0050F143 /* SPTopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTopicItem.h; path = "百思不得姐/Classes/Base/Controller/SPTopicItem.h"; sourceTree = SOURCE_ROOT; };
+		8421351B1E00D7FE0050F143 /* SPTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTopicItem.m; path = "百思不得姐/Classes/Base/Controller/SPTopicItem.m"; sourceTree = SOURCE_ROOT; };
 		8428C6291DF80DB300A05150 /* liumenli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liumenli.png; sourceTree = "<group>"; };
 		8428C62D1DF80DCF00A05150 /* SPFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFriendTrendViewController.h; sourceTree = "<group>"; };
 		8428C62E1DF80DCF00A05150 /* SPFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFriendTrendViewController.m; sourceTree = "<group>"; };
@@ -80,6 +100,18 @@
 		8428C63D1DF80DCF00A05150 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
 		842966FC1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+manager.h"; sourceTree = "<group>"; };
 		842966FD1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+manager.m"; sourceTree = "<group>"; };
+		8440629A1E02733D00A01194 /* SPTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTopicCell.h; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTopicCell.h"; sourceTree = SOURCE_ROOT; };
+		8440629B1E02733D00A01194 /* SPTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTopicCell.m; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTopicCell.m"; sourceTree = SOURCE_ROOT; };
+		8440629D1E02758900A01194 /* SPTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTopView.h; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTopView.h"; sourceTree = SOURCE_ROOT; };
+		8440629E1E02758A00A01194 /* SPTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTopView.m; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTopView.m"; sourceTree = SOURCE_ROOT; };
+		844062A21E0277D300A01194 /* SPTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPTopView.xib; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTopView.xib"; sourceTree = SOURCE_ROOT; };
+		844062A51E0290E300A01194 /* SPTopicViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicViewItem.h; sourceTree = "<group>"; };
+		844062A61E0290E300A01194 /* SPTopicViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicViewItem.m; sourceTree = "<group>"; };
+		844062A81E0295F400A01194 /* SPMiddlePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMiddlePictureView.h; path = "百思不得姐/Classes/Essence/ViewModel/SPMiddlePictureView.h"; sourceTree = SOURCE_ROOT; };
+		844062A91E0295F400A01194 /* SPMiddlePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMiddlePictureView.m; path = "百思不得姐/Classes/Essence/ViewModel/SPMiddlePictureView.m"; sourceTree = SOURCE_ROOT; };
+		844062AB1E02967500A01194 /* SPMiddlePictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPMiddlePictureView.xib; path = "百思不得姐/Classes/Essence/ViewModel/SPMiddlePictureView.xib"; sourceTree = SOURCE_ROOT; };
+		844062B01E029FB600A01194 /* SPBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseView.h; sourceTree = "<group>"; };
+		844062B11E029FB600A01194 /* SPBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseView.m; sourceTree = "<group>"; };
 		8461E1A61DFC6172004284F8 /* SPHomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SPHomeViewController.storyboard; sourceTree = "<group>"; };
 		8461E1A81DFC6E92004284F8 /* SPSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSquareItem.h; path = "百思不得姐/Classes/Home/Controller/SPSquareItem.h"; sourceTree = SOURCE_ROOT; };
 		8461E1A91DFC6E92004284F8 /* SPSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSquareItem.m; path = "百思不得姐/Classes/Home/Controller/SPSquareItem.m"; sourceTree = SOURCE_ROOT; };
@@ -96,6 +128,17 @@
 		84787A051DFD7D510004698D /* SPTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTextViewController.m; sourceTree = "<group>"; };
 		84787A071DFD7FBE0004698D /* SPTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTitleButton.h; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTitleButton.h"; sourceTree = SOURCE_ROOT; };
 		84787A081DFD7FBE0004698D /* SPTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTitleButton.m; path = "百思不得姐/Classes/Essence/Controller/ChildViewControllers/SPTitleButton.m"; sourceTree = SOURCE_ROOT; };
+		847AE9801E04241D007CFE48 /* SPMiddleVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMiddleVideoView.h; path = "百思不得姐/Classes/Base/View/SPMiddleVideoView.h"; sourceTree = SOURCE_ROOT; };
+		847AE9811E04241D007CFE48 /* SPMiddleVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMiddleVideoView.m; path = "百思不得姐/Classes/Base/View/SPMiddleVideoView.m"; sourceTree = SOURCE_ROOT; };
+		847AE9831E042456007CFE48 /* SPMiddleVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPMiddleVideoView.xib; path = "百思不得姐/Classes/Base/View/SPMiddleVideoView.xib"; sourceTree = SOURCE_ROOT; };
+		847AE9851E043210007CFE48 /* SPMiddleVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMiddleVoiceView.h; path = "百思不得姐/Classes/Base/View/SPMiddleVoiceView.h"; sourceTree = SOURCE_ROOT; };
+		847AE9861E043210007CFE48 /* SPMiddleVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMiddleVoiceView.m; path = "百思不得姐/Classes/Base/View/SPMiddleVoiceView.m"; sourceTree = SOURCE_ROOT; };
+		847AE9881E04324D007CFE48 /* SPMiddleVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPMiddleVoiceView.xib; path = "百思不得姐/Classes/Base/View/SPMiddleVoiceView.xib"; sourceTree = SOURCE_ROOT; };
+		847AE98A1E043695007CFE48 /* SPCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCommentView.h; path = "百思不得姐/Classes/Base/View/SPCommentView.h"; sourceTree = SOURCE_ROOT; };
+		847AE98B1E043695007CFE48 /* SPCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCommentView.m; path = "百思不得姐/Classes/Base/View/SPCommentView.m"; sourceTree = SOURCE_ROOT; };
+		847AE98D1E0436F6007CFE48 /* SPCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPCommentView.xib; path = "百思不得姐/Classes/Base/View/SPCommentView.xib"; sourceTree = SOURCE_ROOT; };
+		847AE98F1E04C3FE007CFE48 /* SPUserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserItem.h; sourceTree = "<group>"; };
+		847AE9901E04C3FE007CFE48 /* SPUserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserItem.m; sourceTree = "<group>"; };
 		84C5BAEC1DFA59C900C03DB3 /* SPLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoginRegisterViewController.h; sourceTree = "<group>"; };
 		84C5BAED1DFA59C900C03DB3 /* SPLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoginRegisterViewController.m; sourceTree = "<group>"; };
 		84C5BAEE1DFA59C900C03DB3 /* SPLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoginRegisterViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +229,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		842135131E00D1AF0050F143 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				842135141E00D1AF0050F143 /* Controller */,
+				842135161E00D1AF0050F143 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		842135141E00D1AF0050F143 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				842135171E00D1CF0050F143 /* SPBaseViewController.h */,
+				842135181E00D1CF0050F143 /* SPBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		842135161E00D1AF0050F143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				844062B01E029FB600A01194 /* SPBaseView.h */,
+				844062B11E029FB600A01194 /* SPBaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8428C62B1DF80DCF00A05150 /* FriendTrend */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +311,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		844062A41E0290C100A01194 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				844062A51E0290E300A01194 /* SPTopicViewItem.h */,
+				844062A61E0290E300A01194 /* SPTopicViewItem.m */,
+				847AE98F1E04C3FE007CFE48 /* SPUserItem.h */,
+				847AE9901E04C3FE007CFE48 /* SPUserItem.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		847879FA1DFD78B30004698D /* ChildViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +342,7 @@
 		E41FDF501DE3F543002572F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				842135131E00D1AF0050F143 /* Base */,
 				E4D963C91DF41B820086FAB9 /* AD */,
 				E41FDF681DE3F543002572F9 /* Main */,
 				E41FDF561DE3F543002572F9 /* Essence */,
@@ -297,6 +379,7 @@
 			children = (
 				E41FDF571DE3F543002572F9 /* Controller */,
 				E41FDF5A1DE3F543002572F9 /* Model */,
+				844062A41E0290C100A01194 /* ViewModel */,
 				E41FDF5B1DE3F543002572F9 /* View */,
 			);
 			path = Essence;
@@ -315,6 +398,8 @@
 		E41FDF5A1DE3F543002572F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8421351A1E00D7FE0050F143 /* SPTopicItem.h */,
+				8421351B1E00D7FE0050F143 /* SPTopicItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +409,23 @@
 			children = (
 				84787A071DFD7FBE0004698D /* SPTitleButton.h */,
 				84787A081DFD7FBE0004698D /* SPTitleButton.m */,
+				8440629A1E02733D00A01194 /* SPTopicCell.h */,
+				8440629B1E02733D00A01194 /* SPTopicCell.m */,
+				8440629D1E02758900A01194 /* SPTopView.h */,
+				8440629E1E02758A00A01194 /* SPTopView.m */,
+				844062A21E0277D300A01194 /* SPTopView.xib */,
+				844062A81E0295F400A01194 /* SPMiddlePictureView.h */,
+				844062A91E0295F400A01194 /* SPMiddlePictureView.m */,
+				844062AB1E02967500A01194 /* SPMiddlePictureView.xib */,
+				847AE9801E04241D007CFE48 /* SPMiddleVideoView.h */,
+				847AE9811E04241D007CFE48 /* SPMiddleVideoView.m */,
+				847AE9831E042456007CFE48 /* SPMiddleVideoView.xib */,
+				847AE9851E043210007CFE48 /* SPMiddleVoiceView.h */,
+				847AE9861E043210007CFE48 /* SPMiddleVoiceView.m */,
+				847AE9881E04324D007CFE48 /* SPMiddleVoiceView.xib */,
+				847AE98A1E043695007CFE48 /* SPCommentView.h */,
+				847AE98B1E043695007CFE48 /* SPCommentView.m */,
+				847AE98D1E0436F6007CFE48 /* SPCommentView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -687,10 +789,15 @@
 				8428C62A1DF80DB300A05150 /* liumenli.png in Resources */,
 				E4D963DB1DF425CD0086FAB9 /* LaunchImage-700-568h@2x.png in Resources */,
 				84C5BAFA1DFB165500C03DB3 /* SPFastLoginView.xib in Resources */,
+				847AE9891E04324D007CFE48 /* SPMiddleVoiceView.xib in Resources */,
 				E4D963DF1DF425CD0086FAB9 /* LaunchImage.png in Resources */,
 				8461E1AF1DFC6EEB004284F8 /* SPCollectionViewCell.xib in Resources */,
+				847AE9841E042456007CFE48 /* SPMiddleVideoView.xib in Resources */,
+				847AE98E1E0436F6007CFE48 /* SPCommentView.xib in Resources */,
 				E46EED0A1DE3151100E70EC7 /* LaunchScreen.storyboard in Resources */,
 				E4D963DC1DF425CD0086FAB9 /* LaunchImage-700@2x.png in Resources */,
+				844062AC1E02967500A01194 /* SPMiddlePictureView.xib in Resources */,
+				844062A31E0277D300A01194 /* SPTopView.xib in Resources */,
 				E4D963DE1DF425CD0086FAB9 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8428C63F1DF80DCF00A05150 /* SPFriendTrendViewController.xib in Resources */,
 				E4D963DA1DF425CD0086FAB9 /* LaunchImage-568h@2x.png in Resources */,
@@ -761,23 +868,32 @@
 				E41FDF851DE3F543002572F9 /* SPTabBarController.m in Sources */,
 				E41FDF831DE3F543002572F9 /* SPHomeViewController.m in Sources */,
 				84787A091DFD7FBE0004698D /* SPTitleButton.m in Sources */,
+				842135191E00D1CF0050F143 /* SPBaseViewController.m in Sources */,
 				84C5BAF81DFB164700C03DB3 /* SPFastLoginView.m in Sources */,
+				8440629F1E02758A00A01194 /* SPTopView.m in Sources */,
+				844062B21E029FB600A01194 /* SPBaseView.m in Sources */,
+				8440629C1E02733D00A01194 /* SPTopicCell.m in Sources */,
 				84787A031DFD7D430004698D /* SPPicturesViewController.m in Sources */,
+				847AE9911E04C3FE007CFE48 /* SPUserItem.m in Sources */,
 				8461E1AE1DFC6EEB004284F8 /* SPCollectionViewCell.m in Sources */,
 				84C877921DFE4EAA0067CFEE /* SPVoiceViewController.m in Sources */,
 				E4CEFD8D1DE547B7004C1443 /* UIBarButtonItem+ButtonItem.m in Sources */,
 				E41FDF841DE3F543002572F9 /* SPNavigationController.m in Sources */,
 				E41FDF871DE3F543002572F9 /* SPPublishViewController.m in Sources */,
+				847AE98C1E043695007CFE48 /* SPCommentView.m in Sources */,
 				E4D963CF1DF41BC10086FAB9 /* SPADViewController.m in Sources */,
 				847879FD1DFD7D090004698D /* SPAllViewController.m in Sources */,
 				E41FDF8E1DE42C92002572F9 /* UIView+Frame.m in Sources */,
+				844062AA1E0295F400A01194 /* SPMiddlePictureView.m in Sources */,
 				84C5BAEF1DFA59C900C03DB3 /* SPLoginRegisterViewController.m in Sources */,
+				847AE9821E04241D007CFE48 /* SPMiddleVideoView.m in Sources */,
 				8461E1AA1DFC6E92004284F8 /* SPSquareItem.m in Sources */,
 				84C5BAF31DFB01CC00C03DB3 /* SPLoginRegisterView.m in Sources */,
 				E41FDF801DE3F543002572F9 /* UIImage+Image.m in Sources */,
 				8428C6421DF80DCF00A05150 /* SPLeftButton.m in Sources */,
 				842966FE1DF8FF9800FC3621 /* AFHTTPSessionManager+manager.m in Sources */,
 				8428C6451DF80DCF00A05150 /* SPTableViewCell.m in Sources */,
+				844062A71E0290E300A01194 /* SPTopicViewItem.m in Sources */,
 				8428C6401DF80DCF00A05150 /* SPRecommendViewController.m in Sources */,
 				84C5BAFD1DFB16A300C03DB3 /* SPFastLoginButton.m in Sources */,
 				E41FDF7F1DE3F543002572F9 /* UIColor+Color.m in Sources */,
@@ -785,11 +901,13 @@
 				84787A061DFD7D510004698D /* SPTextViewController.m in Sources */,
 				E41FDF8B1DE3FA96002572F9 /* SPTabBar.m in Sources */,
 				E46EECFC1DE3151100E70EC7 /* main.m in Sources */,
+				847AE9871E043210007CFE48 /* SPMiddleVoiceView.m in Sources */,
 				E41FDF811DE3F543002572F9 /* SPEssenceViewController.m in Sources */,
 				8428C6431DF80DCF00A05150 /* SPLeftView.m in Sources */,
 				84787A001DFD7D300004698D /* SPVideosViewController.m in Sources */,
 				E4CEFD941DE57687004C1443 /* SPSettingViewController.m in Sources */,
 				E4D963E61DF42ADB0086FAB9 /* SPADItem.m in Sources */,
+				8421351C1E00D7FE0050F143 /* SPTopicItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
