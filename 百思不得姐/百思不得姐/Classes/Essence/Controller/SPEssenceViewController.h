@@ -2,12 +2,12 @@
 //  SPEssenceViewController.h
 //  百思不得姐
 //
-//  Created by 潘天峰 on 16/11/21.
-//  Copyright © 2016年 skyPeat. All rights reserved.
+//  Created by tianfeng pan on 17/1/12.
+//  Copyright © 2017年 tianfeng pan. All rights reserved.
 //
 
-#import "SPBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface SPEssenceViewController : SPBaseViewController
+@interface SPEssenceViewController : UITableViewController
 
 @end

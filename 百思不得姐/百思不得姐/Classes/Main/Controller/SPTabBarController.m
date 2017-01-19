@@ -2,65 +2,59 @@
 //  SPTabBarController.m
 //  百思不得姐
 //
-//  Created by 潘天峰 on 16/11/21.
-//  Copyright © 2016年 skyPeat. All rights reserved.
+//  Created by tianfeng pan on 17/1/12.
+//  Copyright © 2017年 tianfeng pan. All rights reserved.
 //
 
 #import "SPTabBarController.h"
 #import "SPNavigationController.h"
 #import "SPEssenceViewController.h"
 #import "SPNewViewController.h"
-#import "SPPublishViewController.h"
 #import "SPFriendTrendViewController.h"
-#import "SPHomeViewController.h"
-
-#import "SPTabBar.h"
+#import "SPMineViewController.h"
+#import "SP_TabBar.h"
 @interface SPTabBarController ()
 
 @end
 
 @implementation SPTabBarController
-+(void)load{
-//    0、获取全局的UITabBarItem
-    UITabBarItem *item = [UITabBarItem appearance];
-//    1、设置文字的属性
-    NSMutableDictionary *attri = [NSMutableDictionary dictionary];
-//    文字的颜色
-    attri[NSForegroundColorAttributeName] = [UIColor blackColor];
-    [item setTitleTextAttributes:attri forState:UIControlStateSelected];
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    0、添加子控制器
-    [self addChildViewController];
-   
+    [self setUpChildViewControllers];
 //    1、自定义tabBar
     [self setUpTabBar];
+    
 }
-#pragma mark-
-#pragma mark- 添加子控制器并设置底部按钮的内容
--(void)addChildViewController{
-//    essence
-    [self childViewController:[[SPEssenceViewController alloc] init] title:@"精华" normalImage:[UIImage imageNamed:@"tabBar_essence_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_essence_click_icon"]];
-//    new
-    [self childViewController:[[SPNewViewController alloc] init] title:@"新帖" normalImage:[UIImage imageNamed:@"tabBar_new_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_new_click_icon"]];
-//    friendTrend
-    [self childViewController:[[SPFriendTrendViewController alloc] init] title:@"关注" normalImage:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_friendTrends_click_icon"]];
-//    me
-//    从storyboard加载控制器
-    UIStoryboard *homeStoryboardVC = [UIStoryboard storyboardWithName:@"SPHomeViewController" bundle:nil];
-    [self childViewController:[homeStoryboardVC instantiateInitialViewController] title:@"我的" normalImage:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamedWithOriginal:@"tabBar_me_click_icon"]];
+#pragma mark- 添加子控制器
+-(void)setUpChildViewControllers{
+//    0、essence(精华)
+    [self childViewController:[[SPEssenceViewController alloc] init] title:@"精华" normalImageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+//    1、new(新帖)
+    [self childViewController:[[SPNewViewController alloc] init] title:@"新帖" normalImageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
+//    2、friendTrend(关注)
+    [self childViewController:[[SPFriendTrendViewController alloc] init] title:@"败家姐" normalImageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
+//    3、home(我的)
+    [self childViewController:[[SPMineViewController alloc] init] title:@"我的" normalImageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
--(void)childViewController:(UIViewController *)viewController title:(NSString *)title normalImage:(UIImage *)normalImage selectedImage:(UIImage *)selectedImage{
+#pragma mark- 初始化子控制器
+-(void)childViewController:(UIViewController *)viewController title:(NSString *)title normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName{
     viewController.title = title;
-    viewController.tabBarItem.image = normalImage;
-    viewController.tabBarItem.selectedImage = selectedImage;
-    SPNavigationController *naVC = [[SPNavigationController alloc]initWithRootViewController:viewController];
-    [self addChildViewController:naVC];
+    viewController.tabBarItem.image = [UIImage imageNamed:normalImageName];
+    viewController.tabBarItem.selectedImage = [UIImage imageNamedWithRenderImageName:selectedImageName];
+    SPNavigationController *nav = [[SPNavigationController alloc] initWithRootViewController:viewController];
+    [self addChildViewController:nav];
+}
+#pragma mark- 处理文字不备渲染
++(void)load{
+    UITabBarItem *tabBarItem = [UITabBarItem appearance];
+    NSDictionary *sizeAttri = @{NSFontAttributeName :  [UIFont systemFontOfSize:13]};
+    [tabBarItem setTitleTextAttributes:sizeAttri forState:UIControlStateNormal];
+    NSDictionary *colorAttri = @{NSForegroundColorAttributeName :  [UIColor blackColor]};
+    [tabBarItem setTitleTextAttributes:colorAttri forState:UIControlStateSelected];
 }
 -(void)setUpTabBar{
-    SPTabBar *tabBar = [[SPTabBar alloc] init];
-    
-    [self setValue:tabBar forKey:@"tabBar"];
-    }
+    [self setValue:[[SP_TabBar alloc] init] forKey:@"tabBar"];
+}
 @end
