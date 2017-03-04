@@ -45,6 +45,7 @@
         [backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     }
+    
     [super pushViewController:viewController animated:animated];
 }
 -(void)backButtonClick{

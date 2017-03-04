@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPFriendTrendViewController : UITableViewController
+@interface SPFriendTrendViewController : UIViewController
 
 @end

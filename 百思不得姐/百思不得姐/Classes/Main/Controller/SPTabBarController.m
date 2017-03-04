@@ -34,9 +34,10 @@
 //    1、new(新帖)
     [self childViewController:[[SPNewViewController alloc] init] title:@"新帖" normalImageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
 //    2、friendTrend(关注)
-    [self childViewController:[[SPFriendTrendViewController alloc] init] title:@"败家姐" normalImageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
-//    3、home(我的)
-    [self childViewController:[[SPMineViewController alloc] init] title:@"我的" normalImageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
+    [self childViewController:[[SPFriendTrendViewController alloc] init] title:@"关注" normalImageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
+//    3、mine(我的)
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"SPMineViewController" bundle:nil];
+    [self childViewController:[storyBoard instantiateViewControllerWithIdentifier:@"SPMineViewController"] title:@"我的" normalImageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
 #pragma mark- 初始化子控制器
 -(void)childViewController:(UIViewController *)viewController title:(NSString *)title normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName{

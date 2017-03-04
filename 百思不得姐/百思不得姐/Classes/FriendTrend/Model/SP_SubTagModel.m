@@ -9,5 +9,12 @@
 #import "SP_SubTagModel.h"
 
 @implementation SP_SubTagModel
-
++(instancetype)subTagModelWithDict:(NSDictionary *)dict{
+    SP_SubTagModel *model = [[SP_SubTagModel alloc] init];
+    [model setValuesForKeysWithDictionary:dict];
+    return model;
+}
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+}
 @end

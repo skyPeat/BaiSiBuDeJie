@@ -6,8 +6,7 @@
 //  Copyright © 2017年 tianfeng pan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface SPEssenceViewController : UITableViewController
+#import "SPBaseViewController.h"
+@interface SPEssenceViewController : SPBaseViewController
 
 @end

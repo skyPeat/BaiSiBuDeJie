@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SP_SubTagModel;
 @interface SP_SubTagCell : UITableViewCell
-
+@property(nonatomic,strong) SP_SubTagModel *model;
 @end

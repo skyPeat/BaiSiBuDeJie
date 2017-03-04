@@ -7,7 +7,7 @@
 //
 
 #import "SPNewViewController.h"
-
+#import "SPLoginRegisterViewController.h"
 @interface SPNewViewController ()
 
 @end
@@ -16,23 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = SP_RandomColor
     //    0、设置导航条的内容
     [self setUpNavigationbar];
 }
 #pragma mark- 设置导航条的内容
 -(void)setUpNavigationbar{
-    //    left
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"MainTagSubIcon" selectedImageName:@"MainTagSubIconClick" target:self action:@selector(subClick)];
     //    right
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"search-icon" selectedImageName:@"search-icon" target:self action:@selector(searchClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"shen-icon" selectedImageName:@"shen-icon" target:self action:@selector(shenClick)];
     //  titleView
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
--(void)subClick{
-    
+-(void)shenClick{
+    SPLoginRegisterViewController *loginRegisterVC = [[SPLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterVC animated:YES completion:nil];
 }
--(void)searchClick{
-    
-}
+
 @end

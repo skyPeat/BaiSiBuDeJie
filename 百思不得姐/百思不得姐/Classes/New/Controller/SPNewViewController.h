@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPNewViewController : UITableViewController
+@interface SPNewViewController : UIViewController
 
 @end

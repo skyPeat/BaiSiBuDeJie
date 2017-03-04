@@ -23,6 +23,7 @@
     SPTabBarController *rootVC = [[SPTabBarController alloc] init];
 //    SPADViewController *rootVC = [[SPADViewController alloc] init];
     self.window.rootViewController = rootVC;
+//    rootVC.selectedIndex = 1;
     //    2、显示窗口
     [self.window makeKeyAndVisible];
     return YES;

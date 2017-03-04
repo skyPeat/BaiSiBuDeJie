@@ -22,16 +22,19 @@
 #pragma mark- 设置导航条的内容
 -(void)setUpNavigationbar{
     //    left
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"friendsRecommentIcon" selectedImageName:@"friendsRecommentIcon-click" target:self action:@selector(orderClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"friendsRecommentIcon" selectedImageName:@"friendsRecommentIcon-click" target:self action:@selector(subTagClick)];
     //    right
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"nav_coin_icon" selectedImageName:@"nav_coin_icon_click" target:self action:@selector(shopCarClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithNormalImageName:@"search-icon" selectedImageName:@"search-icon" target:self action:@selector(searchClick)];
     //  titleView
-    self.navigationItem.title = @"败家姐精选特惠";
+    self.navigationItem.title = @"关注";
 }
--(void)orderClick{
+-(void)subTagClick{
     [self.navigationController pushViewController:[[SPSubTagViewController alloc] init] animated:YES];
 }
--(void)shopCarClick{
+-(void)searchClick{
     
 }
+- (IBAction)loginRegisterButtonClick:(UIButton *)sender {
+}
+
 @end
