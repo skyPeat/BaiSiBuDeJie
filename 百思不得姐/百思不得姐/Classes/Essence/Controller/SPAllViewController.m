@@ -37,7 +37,7 @@ static NSString *const ID = @"cell";
     NSDictionary *parameter = @{
                                 @"a":@"list",
                                 @"c":@"data",
-                                @"type":@"31"
+                                @"type":@"10"
 //                                @"type":@"41"
                                 };
     NSString *urlString = SP_MainUrl;

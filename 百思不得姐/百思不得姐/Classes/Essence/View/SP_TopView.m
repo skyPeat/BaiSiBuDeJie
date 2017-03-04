@@ -28,9 +28,38 @@
     
     self.nameLabel.text = topicModel.name;
     
-    self.timeLabel.text = topicModel.create_time;
+    self.timeLabel.text = [self dealTime];;
     
     self.text_Label.text = topicModel.text;
+}
+-(NSString *)dealTime{
+    NSString *creatTime = self.topicModel.create_time;
+//    日期格式化
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSDate *creatDate = [formatter dateFromString:creatTime];
+    if ([creatDate isThisYear]) {
+        if ([creatDate isToday]) {
+            NSDateComponents *com = [creatDate dealTime];
+            if (!com.hour) {
+                if (com.minute < 1) {
+                    creatTime = @"刚刚";
+                }else{
+                    creatTime = [NSString stringWithFormat:@"%ld分钟前",com.minute];
+                }
+            }else{
+                creatTime = [NSString stringWithFormat:@"%ld小时前",com.hour];
+            }
+            
+        }else if ([creatDate isYesterday]){
+            formatter.dateFormat = @"昨天 HH:mm:ss";
+            creatTime = [formatter stringFromDate:creatDate];
+        }else{
+            formatter.dateFormat = @"MM-dd HH:mm:ss";
+            creatTime = [formatter stringFromDate:creatDate];
+        }
+    }
+    return creatTime;
 }
 - (IBAction)moreButtonClick:(UIButton *)sender {
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];

@@ -11,11 +11,15 @@
 #import <SDImageCache.h>
 #import "SP_TopicModel.h"
 #import <DALabeledCircularProgressView.h>
+#import "SP_BigPictureView.h"
+#import "SPBigPictureViewController.h"
 @interface SP_PictureView ()
 @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *gifImageView;
 @property (weak, nonatomic) IBOutlet UIButton *seeBigImageButton;
+
+@property(nonatomic,weak) SP_BigPictureView *backView;
 @end
 @implementation SP_PictureView
 -(void)awakeFromNib{
@@ -60,5 +64,24 @@
         self.pictureImageView.contentMode = UIViewContentModeScaleAspectFit;
         
     }
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self seeBigImageButtonClick:nil];
+//    SP_BigPictureView *backView = [[SP_BigPictureView alloc] initWithFrame:SP_ScreenBounds];
+//    backView.backgroundColor = [UIColor blackColor];
+//       self.backView = backView;
+//    [self.window addSubview:backView];
+}
+
+- (IBAction)seeBigImageButtonClick:(UIButton *)sender {
+     SPBigPictureViewController *bigPictureVC = [[SPBigPictureViewController alloc] init];
+    bigPictureVC.model = self.topicModel;
+    [self.window.rootViewController presentViewController:bigPictureVC animated:YES completion:^{
+        
+    }];
+    
+    
+    
+    
 }
 @end

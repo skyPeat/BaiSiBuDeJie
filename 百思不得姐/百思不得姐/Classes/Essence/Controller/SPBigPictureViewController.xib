@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPBigPictureViewController">
+            <connections>
+                <outlet property="commitButton" destination="qcF-JY-YVm" id="wsf-Rh-ND4"/>
+                <outlet property="imageScroollView" destination="dNm-8a-QyL" id="mfa-K0-Rl6"/>
+                <outlet property="resposeButton" destination="0qt-gV-fCa" id="KXq-hc-BPo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNm-8a-QyL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHN-cW-f2L">
+                    <rect key="frame" x="20" y="20" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3PY-AR-oQ3"/>
+                        <constraint firstAttribute="width" constant="45" id="xvT-2l-s8I"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon"/>
+                    <connections>
+                        <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="Jym-bd-E2X"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXz-Im-ejC">
+                    <rect key="frame" x="20" y="613" width="50" height="34"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="W6g-P7-sdn"/>
+                    </constraints>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="saveButtonClick:" destination="-1" eventType="touchUpInside" id="ONk-z0-iBi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcF-JY-YVm">
+                    <rect key="frame" x="298" y="612" width="57" height="35"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="f12-Fe-lBe"/>
+                    </constraints>
+                    <state key="normal" title="评论" image="mainCellComment"/>
+                    <connections>
+                        <action selector="commitButtonClick:" destination="-1" eventType="touchUpInside" id="Oqz-Ao-rqV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qt-gV-fCa">
+                    <rect key="frame" x="221" y="612" width="57" height="35"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="snc-ZA-x7v"/>
+                    </constraints>
+                    <state key="normal" title="分享" image="mainCellShare"/>
+                    <connections>
+                        <action selector="responseButtonClick:" destination="-1" eventType="touchUpInside" id="H5O-oQ-lOw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dNm-8a-QyL" secondAttribute="bottom" id="5Sf-eQ-XOA"/>
+                <constraint firstItem="RHN-cW-f2L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="7c2-bA-vq9"/>
+                <constraint firstItem="RHN-cW-f2L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Oqn-su-6iq"/>
+                <constraint firstAttribute="bottom" secondItem="MXz-Im-ejC" secondAttribute="bottom" constant="20" id="V8R-mE-Y09"/>
+                <constraint firstItem="0qt-gV-fCa" firstAttribute="centerY" secondItem="qcF-JY-YVm" secondAttribute="centerY" id="VB7-yp-vjn"/>
+                <constraint firstItem="dNm-8a-QyL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VJj-Lz-aeD"/>
+                <constraint firstItem="dNm-8a-QyL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b4a-tS-DzM"/>
+                <constraint firstItem="MXz-Im-ejC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="bEu-Tu-5DD"/>
+                <constraint firstAttribute="trailing" secondItem="qcF-JY-YVm" secondAttribute="trailing" constant="20" id="dfb-es-jg0"/>
+                <constraint firstAttribute="bottom" secondItem="qcF-JY-YVm" secondAttribute="bottom" constant="20" id="jws-Ha-8zh"/>
+                <constraint firstItem="qcF-JY-YVm" firstAttribute="leading" secondItem="0qt-gV-fCa" secondAttribute="trailing" constant="20" id="pYg-ha-xrQ"/>
+                <constraint firstAttribute="trailing" secondItem="dNm-8a-QyL" secondAttribute="trailing" id="tYL-Al-2uy"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>
