@@ -10,9 +10,12 @@
 #import "SP_TopicCell.h"
 #import "SP_TopicModel.h"
 #import "SP_TopicViewModel.h"
+#import "SP_FooterView.h"
 static NSString *const ID = @"cell";
 @interface SPAllViewController ()
 @property(nonatomic,strong) NSMutableArray *topicArray;
+@property(nonatomic,weak) SP_FooterView *footerView;
+@property(nonatomic,strong) NSString *maxTime;
 @end
 
 @implementation SPAllViewController
@@ -24,7 +27,50 @@ static NSString *const ID = @"cell";
     [self.tableView registerClass:[SP_TopicCell class] forCellReuseIdentifier:ID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    
+     self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(99, 0, 49, 0);
+    // 上拉刷新
+    [self setUpFooterRefreshView];
+
+}
+#pragma mark- 上拉刷新
+-(void)setUpFooterRefreshView{
+    SP_FooterView *footerView = [SP_FooterView viewFromXib];
+    self.footerView = footerView;
+    self.tableView.tableFooterView = footerView;
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.topicArray.count == 0) return;
+    if (self.tableView.contentOffset.y >= self.tableView.contentSize.height + self.tableView.contentInset.bottom - self.tableView.SP_height ) {
+        if (!_footerView.isLoading) {
+            self.footerView.isLoading = YES;
+            [self loadMoreData];
+        }
+    }
+}
+-(void)loadMoreData{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager SP_manager];
+    NSDictionary *parameter = @{
+                                @"a":@"list",
+                                @"c":@"data",
+                                @"type":@"10",
+                                @"maxtime":_maxTime
+                                //                                @"type":@"41"
+                                };
+    NSString *urlString = SP_MainUrl;
+    [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        self.footerView.isLoading = NO;
+        self.maxTime = responseObject[@"info"][@"maxtime"];
+        NSArray *listArray = responseObject[@"list"];
+        for (NSDictionary *listDict in listArray) {
+            SP_TopicModel *topicModel = [SP_TopicModel topicModelWithDict:listDict];
+            SP_TopicViewModel *viewModel = [[SP_TopicViewModel alloc] init];
+            viewModel.topicModel = topicModel;
+            [self.topicArray addObject:viewModel];
+        }
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        self.footerView.isLoading = NO;
+    }];
 }
 -(NSMutableArray *)topicArray{
     if (_topicArray == nil) {
@@ -32,6 +78,7 @@ static NSString *const ID = @"cell";
     }
     return _topicArray;
 }
+#pragma mark- 请求数据
 -(void)loadData{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager SP_manager];
     NSDictionary *parameter = @{
@@ -42,7 +89,7 @@ static NSString *const ID = @"cell";
                                 };
     NSString *urlString = SP_MainUrl;
     [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        [responseObject writeToFile:@"/Users/tianfengpan/Desktop/app.plist" atomically:YES];
+        self.maxTime = responseObject[@"info"][@"maxtime"];
         NSArray *listArray = responseObject[@"list"];
         for (NSDictionary *listDict in listArray) {
             SP_TopicModel *topicModel = [SP_TopicModel topicModelWithDict:listDict];

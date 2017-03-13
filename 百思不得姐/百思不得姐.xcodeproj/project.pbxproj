@@ -48,6 +48,8 @@
 		8478B1611E2E1D1E00015297 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478B15A1E2E1D1E00015297 /* LaunchImage.png */; };
 		8478B1621E2E1D1E00015297 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478B15B1E2E1D1E00015297 /* LaunchImage@2x.png */; };
 		8478B1651E2E28A500015297 /* SP_ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478B1641E2E28A500015297 /* SP_ADModel.m */; };
+		847CBAFF1E768F9E0088989E /* SP_FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CBAFE1E768F9E0088989E /* SP_FooterView.m */; };
+		847CBB011E768FC20088989E /* SP_FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847CBB001E768FC20088989E /* SP_FooterView.xib */; };
 		84847ABB1E69EF7500D34022 /* SP_VoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84847ABA1E69EF7500D34022 /* SP_VoiceView.m */; };
 		84847ABD1E69EF8100D34022 /* SP_VoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84847ABC1E69EF8100D34022 /* SP_VoiceView.xib */; };
 		849371F11E3095AC00548181 /* SPSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849371F01E3095AC00548181 /* SPSubTagViewController.m */; };
@@ -155,6 +157,9 @@
 		8478B15B1E2E1D1E00015297 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		8478B1631E2E28A500015297 /* SP_ADModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_ADModel.h; sourceTree = "<group>"; };
 		8478B1641E2E28A500015297 /* SP_ADModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_ADModel.m; sourceTree = "<group>"; };
+		847CBAFD1E768F9E0088989E /* SP_FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_FooterView.h; sourceTree = "<group>"; };
+		847CBAFE1E768F9E0088989E /* SP_FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_FooterView.m; sourceTree = "<group>"; };
+		847CBB001E768FC20088989E /* SP_FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SP_FooterView.xib; sourceTree = "<group>"; };
 		84847AB91E69EF7500D34022 /* SP_VoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_VoiceView.h; sourceTree = "<group>"; };
 		84847ABA1E69EF7500D34022 /* SP_VoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_VoiceView.m; sourceTree = "<group>"; };
 		84847ABC1E69EF8100D34022 /* SP_VoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SP_VoiceView.xib; sourceTree = "<group>"; };
@@ -485,6 +490,9 @@
 				840681701E6AA0C30005E1F5 /* SP_CommitView.h */,
 				840681711E6AA0C30005E1F5 /* SP_CommitView.m */,
 				840681731E6AA0D40005E1F5 /* SP_CommitView.xib */,
+				847CBAFD1E768F9E0088989E /* SP_FooterView.h */,
+				847CBAFE1E768F9E0088989E /* SP_FooterView.m */,
+				847CBB001E768FC20088989E /* SP_FooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -853,6 +861,7 @@
 				8493720A1E320C6900548181 /* liumenli.png in Resources */,
 				84754BA31E464ABE00AAC437 /* SP_FastLoginView.xib in Resources */,
 				8406818D1E6B0D8A0005E1F5 /* SPBigPictureViewController.xib in Resources */,
+				847CBB011E768FC20088989E /* SP_FooterView.xib in Resources */,
 				849372081E320AF600548181 /* SPFriendTrendViewController.xib in Resources */,
 				8478B15C1E2E1D1E00015297 /* LaunchImage-568h@2x.png in Resources */,
 				840681741E6AA0D40005E1F5 /* SP_CommitView.xib in Resources */,
@@ -933,6 +942,7 @@
 				8406818C1E6B0D8A0005E1F5 /* SPBigPictureViewController.m in Sources */,
 				84754BA91E464DC600AAC437 /* SP_TextField.m in Sources */,
 				849371FB1E309AF100548181 /* SPEssenceViewController.m in Sources */,
+				847CBAFF1E768F9E0088989E /* SP_FooterView.m in Sources */,
 				84B8D44B1E61C2BE00C1BDD8 /* NSString+SP_String.m in Sources */,
 				84AF2B1D1E276E1C002C4E0D /* SP_TabBar.m in Sources */,
 				849E85741E46F93C00F60C81 /* SP_CollectionViewCell.m in Sources */,
