@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SP_HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉刷新数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-cR-8of">
+                    <rect key="frame" x="0.0" y="0.0" width="405" height="35"/>
+                    <color key="backgroundColor" red="0.2823052835" green="0.99306091839999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="GF9-gx-zO8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV7-5r-I1t">
+                    <rect key="frame" x="0.0" y="0.0" width="405" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载数据......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKs-4d-dp4">
+                            <rect key="frame" x="136" y="7" width="132" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SvS-py-MZi">
+                            <rect key="frame" x="96" y="7" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="SvS-py-MZi" firstAttribute="centerY" secondItem="ZV7-5r-I1t" secondAttribute="centerY" id="GXo-vx-trx"/>
+                        <constraint firstItem="IKs-4d-dp4" firstAttribute="centerY" secondItem="ZV7-5r-I1t" secondAttribute="centerY" id="VFd-wm-azZ"/>
+                        <constraint firstItem="IKs-4d-dp4" firstAttribute="centerX" secondItem="ZV7-5r-I1t" secondAttribute="centerX" id="aMa-Hl-8aq"/>
+                        <constraint firstAttribute="height" constant="35" id="blc-MS-sOX"/>
+                        <constraint firstItem="IKs-4d-dp4" firstAttribute="leading" secondItem="SvS-py-MZi" secondAttribute="trailing" constant="20" id="jgA-EV-QH7"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="MEl-At-T6u">
+                    <rect key="frame" x="50" y="7.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="NHv-3C-aJi"/>
+                        <constraint firstAttribute="height" constant="20" id="YPO-Iz-5mZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZV7-5r-I1t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3tn-hX-PXO"/>
+                <constraint firstItem="ZV7-5r-I1t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7DY-jB-Dwq"/>
+                <constraint firstAttribute="trailing" secondItem="GTv-cR-8of" secondAttribute="trailing" id="9LP-OI-m6P"/>
+                <constraint firstItem="GTv-cR-8of" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9gh-94-wpw"/>
+                <constraint firstItem="MEl-At-T6u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="JOj-eQ-xsi"/>
+                <constraint firstItem="ZV7-5r-I1t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O7Q-Mc-Oby"/>
+                <constraint firstItem="MEl-At-T6u" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ULF-xp-oWJ"/>
+                <constraint firstItem="GTv-cR-8of" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cAz-Qu-nWz"/>
+                <constraint firstItem="GTv-cR-8of" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hEw-dC-BY2"/>
+                <constraint firstAttribute="trailing" secondItem="ZV7-5r-I1t" secondAttribute="trailing" id="zE5-wS-yEP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="MEl-At-T6u" id="FxH-tN-u4G"/>
+                <outlet property="loadView" destination="ZV7-5r-I1t" id="imQ-ku-iwz"/>
+                <outlet property="popLabel" destination="GTv-cR-8of" id="tya-sY-0Rt"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="-107"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="64" height="64"/>
+    </resources>
+</document>

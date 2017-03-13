@@ -50,6 +50,8 @@
 		8478B1651E2E28A500015297 /* SP_ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478B1641E2E28A500015297 /* SP_ADModel.m */; };
 		847CBAFF1E768F9E0088989E /* SP_FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CBAFE1E768F9E0088989E /* SP_FooterView.m */; };
 		847CBB011E768FC20088989E /* SP_FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847CBB001E768FC20088989E /* SP_FooterView.xib */; };
+		847CBB041E76EAF30088989E /* SP_HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847CBB031E76EAF30088989E /* SP_HeaderView.m */; };
+		847CBB061E76EAFE0088989E /* SP_HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847CBB051E76EAFE0088989E /* SP_HeaderView.xib */; };
 		84847ABB1E69EF7500D34022 /* SP_VoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84847ABA1E69EF7500D34022 /* SP_VoiceView.m */; };
 		84847ABD1E69EF8100D34022 /* SP_VoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84847ABC1E69EF8100D34022 /* SP_VoiceView.xib */; };
 		849371F11E3095AC00548181 /* SPSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849371F01E3095AC00548181 /* SPSubTagViewController.m */; };
@@ -160,6 +162,9 @@
 		847CBAFD1E768F9E0088989E /* SP_FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_FooterView.h; sourceTree = "<group>"; };
 		847CBAFE1E768F9E0088989E /* SP_FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_FooterView.m; sourceTree = "<group>"; };
 		847CBB001E768FC20088989E /* SP_FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SP_FooterView.xib; sourceTree = "<group>"; };
+		847CBB021E76EAF30088989E /* SP_HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_HeaderView.h; sourceTree = "<group>"; };
+		847CBB031E76EAF30088989E /* SP_HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_HeaderView.m; sourceTree = "<group>"; };
+		847CBB051E76EAFE0088989E /* SP_HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SP_HeaderView.xib; sourceTree = "<group>"; };
 		84847AB91E69EF7500D34022 /* SP_VoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_VoiceView.h; sourceTree = "<group>"; };
 		84847ABA1E69EF7500D34022 /* SP_VoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP_VoiceView.m; sourceTree = "<group>"; };
 		84847ABC1E69EF8100D34022 /* SP_VoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SP_VoiceView.xib; sourceTree = "<group>"; };
@@ -493,6 +498,9 @@
 				847CBAFD1E768F9E0088989E /* SP_FooterView.h */,
 				847CBAFE1E768F9E0088989E /* SP_FooterView.m */,
 				847CBB001E768FC20088989E /* SP_FooterView.xib */,
+				847CBB021E76EAF30088989E /* SP_HeaderView.h */,
+				847CBB031E76EAF30088989E /* SP_HeaderView.m */,
+				847CBB051E76EAFE0088989E /* SP_HeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -867,6 +875,7 @@
 				840681741E6AA0D40005E1F5 /* SP_CommitView.xib in Resources */,
 				8478B15F1E2E1D1E00015297 /* LaunchImage-800-667h@2x.png in Resources */,
 				84AF2AC81E276CBE002C4E0D /* Assets.xcassets in Resources */,
+				847CBB061E76EAFE0088989E /* SP_HeaderView.xib in Resources */,
 				84754B991E463CEC00AAC437 /* SPLoginRegisterViewController.xib in Resources */,
 				8478B1621E2E1D1E00015297 /* LaunchImage@2x.png in Resources */,
 				8403A6831E5CBCBC00035605 /* SP_TopView.xib in Resources */,
@@ -928,6 +937,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847CBB041E76EAF30088989E /* SP_HeaderView.m in Sources */,
 				846FF6181E50C49900AAF730 /* SPPictureViewController.m in Sources */,
 				849371F81E30966700548181 /* SP_SubTagCell.m in Sources */,
 				84AF2B211E276E1C002C4E0D /* UIBarButtonItem+SP_BarbuttonItem.m in Sources */,

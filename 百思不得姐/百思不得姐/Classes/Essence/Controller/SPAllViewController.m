@@ -11,10 +11,12 @@
 #import "SP_TopicModel.h"
 #import "SP_TopicViewModel.h"
 #import "SP_FooterView.h"
+#import "SP_HeaderView.h"
 static NSString *const ID = @"cell";
 @interface SPAllViewController ()
 @property(nonatomic,strong) NSMutableArray *topicArray;
 @property(nonatomic,weak) SP_FooterView *footerView;
+@property(nonatomic,weak) SP_HeaderView *headerView;
 @property(nonatomic,strong) NSString *maxTime;
 @end
 
@@ -28,23 +30,36 @@ static NSString *const ID = @"cell";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
      self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(99, 0, 49, 0);
-    // 上拉刷新
+    // 上拉加载更多数据
     [self setUpFooterRefreshView];
+    //下拉刷新数据
+    [self setUpHeaderRefreshView];
 
 }
-#pragma mark- 上拉刷新
+#pragma mark- 上拉加载更多数据
 -(void)setUpFooterRefreshView{
     SP_FooterView *footerView = [SP_FooterView viewFromXib];
     self.footerView = footerView;
     self.tableView.tableFooterView = footerView;
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self dealFooterView];
+    [self dealHeaderView];
+}
+-(void)dealFooterView{
     if (self.topicArray.count == 0) return;
     if (self.tableView.contentOffset.y >= self.tableView.contentSize.height + self.tableView.contentInset.bottom - self.tableView.SP_height ) {
         if (!_footerView.isLoading) {
             self.footerView.isLoading = YES;
             [self loadMoreData];
         }
+    }
+}
+-(void)dealHeaderView{
+    if (self.tableView.contentOffset.y <= -(self.tableView.contentInset.top + 35)) {
+        self.headerView.isAppear = YES;
+    }else{
+        self.headerView.isAppear = NO;
     }
 }
 -(void)loadMoreData{
@@ -72,13 +87,26 @@ static NSString *const ID = @"cell";
         self.footerView.isLoading = NO;
     }];
 }
+#pragma mark- 下拉刷新数据
+-(void)setUpHeaderRefreshView{
+    SP_HeaderView *headerView = [SP_HeaderView viewFromXib];
+    self.headerView = headerView;
+     headerView.SP_y = -headerView.SP_height;
+    [self.tableView addSubview:headerView];
+}
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if (self.headerView.isAppear && !self.headerView.isLoading) {
+        self.headerView.isLoading = YES;
+        [self loadData];
+    }
+}
+#pragma mark- 请求数据
 -(NSMutableArray *)topicArray{
     if (_topicArray == nil) {
         _topicArray = [NSMutableArray array];
     }
     return _topicArray;
 }
-#pragma mark- 请求数据
 -(void)loadData{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager SP_manager];
     NSDictionary *parameter = @{
@@ -89,6 +117,7 @@ static NSString *const ID = @"cell";
                                 };
     NSString *urlString = SP_MainUrl;
     [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        self.headerView.isLoading = NO;
         self.maxTime = responseObject[@"info"][@"maxtime"];
         NSArray *listArray = responseObject[@"list"];
         for (NSDictionary *listDict in listArray) {
@@ -99,9 +128,10 @@ static NSString *const ID = @"cell";
         }
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
+        self.headerView.isLoading = NO;
     }];
 }
+#pragma mark- 实现代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.topicArray.count;
 }
