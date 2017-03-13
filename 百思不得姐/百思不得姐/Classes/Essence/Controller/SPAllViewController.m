@@ -19,10 +19,16 @@ static NSString *const ID = @"cell";
 @property(nonatomic,weak) SP_HeaderView *headerView;
 @property(nonatomic,strong) NSString *maxTime;
 @property(nonatomic,assign) UIEdgeInsets inset;
+@property(nonatomic,strong) AFHTTPSessionManager *manager;
 @end
 
 @implementation SPAllViewController
-
+-(AFHTTPSessionManager *)manager{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager SP_manager];
+    }
+    return _manager;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    请求数据
@@ -66,7 +72,6 @@ static NSString *const ID = @"cell";
     }
 }
 -(void)loadMoreData{
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager SP_manager];
     NSDictionary *parameter = @{
                                 @"a":@"list",
                                 @"c":@"data",
@@ -75,7 +80,7 @@ static NSString *const ID = @"cell";
                                 //                                @"type":@"41"
                                 };
     NSString *urlString = SP_MainUrl;
-    [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         self.footerView.isLoading = NO;
         self.maxTime = responseObject[@"info"][@"maxtime"];
         NSArray *listArray = responseObject[@"list"];
@@ -112,7 +117,6 @@ static NSString *const ID = @"cell";
     return _topicArray;
 }
 -(void)loadData{
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager SP_manager];
     NSDictionary *parameter = @{
                                 @"a":@"list",
                                 @"c":@"data",
@@ -120,7 +124,7 @@ static NSString *const ID = @"cell";
 //                                @"type":@"41"
                                 };
     NSString *urlString = SP_MainUrl;
-    [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         self.tableView.contentInset = self.inset;
         self.headerView.isLoading = NO;
         self.maxTime = responseObject[@"info"][@"maxtime"];
