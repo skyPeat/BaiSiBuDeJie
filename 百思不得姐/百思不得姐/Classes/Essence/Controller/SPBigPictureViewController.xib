@@ -13,6 +13,7 @@
                 <outlet property="commitButton" destination="qcF-JY-YVm" id="wsf-Rh-ND4"/>
                 <outlet property="imageScroollView" destination="dNm-8a-QyL" id="mfa-K0-Rl6"/>
                 <outlet property="resposeButton" destination="0qt-gV-fCa" id="KXq-hc-BPo"/>
+                <outlet property="saveButton" destination="MXz-Im-ejC" id="Aai-64-Lin"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +36,7 @@
                         <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="Jym-bd-E2X"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXz-Im-ejC">
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXz-Im-ejC">
                     <rect key="frame" x="20" y="613" width="50" height="34"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>

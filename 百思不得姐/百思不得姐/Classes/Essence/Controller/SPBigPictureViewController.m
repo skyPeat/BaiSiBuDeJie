@@ -10,10 +10,14 @@
 #import "SP_TopicModel.h"
 #import <SDImageCache.h>
 #import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
+#import <Photos/Photos.h>
+#import "SP_PhotoManager.h"
 @interface SPBigPictureViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *imageScroollView;
 @property (weak, nonatomic) IBOutlet UIButton *resposeButton;
 @property (weak, nonatomic) IBOutlet UIButton *commitButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property(nonatomic,weak) UIImageView *imageView;
 @end
 
@@ -38,7 +42,11 @@
     [self.imageScroollView addSubview:imageView];
     self.imageScroollView.delegate = self;
     UIImage *image = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:self.model.image0];
-    [imageView sd_setImageWithURL:self.model.image0.SP_UrlString placeholderImage:image];
+    [imageView sd_setImageWithURL:self.model.image0.SP_UrlString placeholderImage:image completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if (image) {
+            self.saveButton.enabled = YES;
+        }
+    }];
     if (self.model.isBig || (self.model.is_gif && self.model.height > SP_ScreenH)) {
         self.imageScroollView.contentSize = CGSizeMake(0, imageH);
         self.imageScroollView.minimumZoomScale = 1.0;
@@ -54,9 +62,59 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)saveButtonClick:(UIButton *)sender {
+
+    //判断用户权限
+
+    /* PHAuthorizationStatusNotDetermined = 0,    //未决定  PHAuthorizationStatusRestricted,         // 家长控制状态       PHAuthorizationStatusDenied,        //拒绝
+     PHAuthorizationStatusAuthorized     // 允许授权
+
+     */
+
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusAuthorized) {
+        [SP_PhotoManager saveImage:self.imageView.image toCollection:@"百思不得姐" CompletionHandler:^(BOOL success, NSError *error) {
+            if (success) {
+                [SVProgressHUD showSuccessWithStatus:@"图片保存成功!"];
+            }else{
+                [SVProgressHUD showErrorWithStatus:@"图片保存失败,是不是该换手机了?"];
+            }
+        }];
+    }else if (status == PHAuthorizationStatusNotDetermined){
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            if (status == PHAuthorizationStatusAuthorized) {
+                [SP_PhotoManager saveImage:self.imageView.image toCollection:@"百思不得姐" CompletionHandler:^(BOOL success, NSError *error) {
+                    if (success) {
+                        [SVProgressHUD showSuccessWithStatus:@"图片保存成功!"];
+                    }else{
+                        [SVProgressHUD showErrorWithStatus:@"图片保存失败,是不是该换手机了?"];
+                    }
+                }];
+            }
+        }];
+
+    }else{
+        if ([[UIApplication sharedApplication] canOpenURL:UIApplicationOpenSettingsURLString.SP_UrlString]) {
+
+            [[UIApplication sharedApplication] openURL:UIApplicationOpenSettingsURLString.SP_UrlString];
+        }
+    }
+    
+
 }
+
+//- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+//    if (!error) {
+//        [SVProgressHUD showSuccessWithStatus:@"图片保存成功!"];
+//    }else{
+//        [SVProgressHUD showErrorWithStatus:@"图片保存失败,是不是该换手机了?"];
+//    }
+//}
+
 - (IBAction)commitButtonClick:(UIButton *)sender {
+
+
 }
+
 - (IBAction)responseButtonClick:(UIButton *)sender {
 }
 @end
