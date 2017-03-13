@@ -18,6 +18,7 @@ static NSString *const ID = @"cell";
 @property(nonatomic,weak) SP_FooterView *footerView;
 @property(nonatomic,weak) SP_HeaderView *headerView;
 @property(nonatomic,strong) NSString *maxTime;
+@property(nonatomic,assign) UIEdgeInsets inset;
 @end
 
 @implementation SPAllViewController
@@ -29,7 +30,9 @@ static NSString *const ID = @"cell";
     [self.tableView registerClass:[SP_TopicCell class] forCellReuseIdentifier:ID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-     self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(99, 0, 49, 0);
+    UIEdgeInsets inset = UIEdgeInsetsMake(99, 0, 49, 0);;
+     self.tableView.scrollIndicatorInsets =inset;
+    self.inset = inset;
     // 上拉加载更多数据
     [self setUpFooterRefreshView];
     //下拉刷新数据
@@ -98,6 +101,7 @@ static NSString *const ID = @"cell";
     if (self.headerView.isAppear && !self.headerView.isLoading) {
         self.headerView.isLoading = YES;
         [self loadData];
+        self.tableView.contentInset = UIEdgeInsetsMake(self.inset.top + self.headerView.SP_height, 0, self.inset.bottom, 0);
     }
 }
 #pragma mark- 请求数据
@@ -117,9 +121,11 @@ static NSString *const ID = @"cell";
                                 };
     NSString *urlString = SP_MainUrl;
     [manager SP_GET:urlString parameters:parameter progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        self.tableView.contentInset = self.inset;
         self.headerView.isLoading = NO;
         self.maxTime = responseObject[@"info"][@"maxtime"];
         NSArray *listArray = responseObject[@"list"];
+        [self.topicArray removeAllObjects];
         for (NSDictionary *listDict in listArray) {
             SP_TopicModel *topicModel = [SP_TopicModel topicModelWithDict:listDict];
             SP_TopicViewModel *viewModel = [[SP_TopicViewModel alloc] init];
@@ -128,11 +134,13 @@ static NSString *const ID = @"cell";
         }
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        self.tableView.contentInset = self.inset;
         self.headerView.isLoading = NO;
     }];
 }
 #pragma mark- 实现代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    self.footerView.hidden = self.topicArray.count == 0;
     return self.topicArray.count;
 }
 
